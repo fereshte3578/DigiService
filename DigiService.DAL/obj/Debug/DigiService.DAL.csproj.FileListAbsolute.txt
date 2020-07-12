@@ -1,0 +1,7 @@
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.dll
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.pdb
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.dll
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.pdb
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csprojResolveAssemblyReference.cache
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.dll
+C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.pdb
