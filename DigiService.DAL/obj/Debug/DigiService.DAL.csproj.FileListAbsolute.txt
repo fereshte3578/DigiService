@@ -5,3 +5,11 @@ C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiServi
 C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csprojResolveAssemblyReference.cache
 C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.dll
 C:\Users\RaYan Baran\Documents\Visual Studio 2013\Projects\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.pdb
+E:\p\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.dll
+E:\p\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.pdb
+E:\p\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.dll
+E:\p\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.pdb
+E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csprojAssemblyReference.cache
+E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csproj.CopyComplete
+E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.dll
+E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.pdb
