@@ -55,6 +55,10 @@ namespace DigiService.DAL
 
         public List<CenteralLab> SelectAllWelfare()
         {
+
+            List<CenteralLab> allcenteralLabs = new List<CenteralLab>();
+
+
             // 1.make new connection
 
             SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = true");
@@ -63,10 +67,8 @@ namespace DigiService.DAL
             //make a command
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
-            //sqlCommand.CommandText = "SELECT id , title , IsActived , DepartmentId from Area ";
             sqlCommand.CommandText = "CenteralLab_SelectAllWelfare";
 
-            List<CenteralLab> allcenteralLabs = new List<CenteralLab>();
 
 
             CenteralLab TmpCenterLab = null;
@@ -103,16 +105,9 @@ namespace DigiService.DAL
 
         public List<CenteralLab> SelectAll()
         {
-            
-            // 1.make new connection
-
              SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = true");
-
-
-             //make a command
              SqlCommand sqlCommand = sqlConnection.CreateCommand();
              sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
-             //sqlCommand.CommandText = "SELECT id , title , IsActived , DepartmentId from Area ";
              sqlCommand.CommandText = "CenteralLab_SelectAll";
 
             List<CenteralLab> allcenteralLabs = new List<CenteralLab>();

@@ -11,12 +11,17 @@ namespace DigiService.UIL
 {
     public partial class CenteralLabWebForm2 : System.Web.UI.Page
     {
+        public List<ReSource> MultyResoure = new List<ReSource>();
+        public List<CenteralLab> AllcenteralLabs = new List<CenteralLab>();
         protected void Page_Load(object sender, EventArgs e)
         {
             CenteralLabManager centralLabManager = new CenteralLabManager();
-            List<CenteralLab> allcenteralLabs = centralLabManager.SelectAll();
-            GridView1.DataSource = allcenteralLabs;
-            GridView1.DataBind();
+            AllcenteralLabs = centralLabManager.SelectAll();
+
+            ReSourceManager reSourceManager = new ReSourceManager();
+            MultyResoure = reSourceManager.SelectMultySelect();
+
+
 
         }
     }

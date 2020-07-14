@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CeterallabDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReSourceDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiService.Entities\DigiService.Entities.csproj">

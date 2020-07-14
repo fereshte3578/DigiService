@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CenteralLabManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReSourceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiService.DAL\DigiService.DAL.csproj">
