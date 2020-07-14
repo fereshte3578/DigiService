@@ -15,5 +15,17 @@ namespace DigiService.BLL
             CeterallabDao ceterallabDao = new CeterallabDao();
             return ceterallabDao.Load(id);
         }
+
+        public List<CenteralLab> SelectAll()
+        {
+            CeterallabDao ceterallabDao = new CeterallabDao();
+            return ceterallabDao.SelectAll();
+        }
+
+        public List<CenteralLab> SelectAllWelfare()
+        {
+            CeterallabDao ceterallabDao = new CeterallabDao();
+            return ceterallabDao.SelectAllWelfare();
+        }
     }
 }

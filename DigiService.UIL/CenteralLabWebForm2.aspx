@@ -10,6 +10,9 @@
     <form id="form1" runat="server">
         <div>
         </div>
+            <asp:GridView ID="GridView1" runat="server" Width="100%" DataKeyNames="id">
+                
+            </asp:GridView>
     </form>
 </body>
 </html>

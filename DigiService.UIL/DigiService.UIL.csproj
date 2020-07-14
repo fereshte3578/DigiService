@@ -71,6 +71,7 @@
     <Content Include="CenteralLabWebForm2.aspx" />
     <Content Include="Styles\Style.css" />
     <Content Include="Web.config" />
+    <Content Include="WelfareWebform.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CenteralLabForm.aspx.cs">
@@ -88,6 +89,13 @@
       <DependentUpon>CenteralLabWebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WelfareWebform.aspx.cs">
+      <DependentUpon>WelfareWebform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelfareWebform.aspx.designer.cs">
+      <DependentUpon>WelfareWebform.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiService.BLL\DigiService.BLL.csproj">

@@ -9,15 +9,13 @@ using System.Web.UI.WebControls;
 
 namespace DigiService.UIL
 {
-    public partial class CenteralLabWebForm2 : System.Web.UI.Page
+    public partial class WelfareWebform : System.Web.UI.Page
     {
+        public List<CenteralLab> allcenteralLabs = new List<CenteralLab>();
         protected void Page_Load(object sender, EventArgs e)
         {
             CenteralLabManager centralLabManager = new CenteralLabManager();
-            List<CenteralLab> allcenteralLabs = centralLabManager.SelectAll();
-            GridView1.DataSource = allcenteralLabs;
-            GridView1.DataBind();
-
+            allcenteralLabs = centralLabManager.SelectAllWelfare();
         }
     }
 }
