@@ -21,3 +21,16 @@ E:\p\DigiService\DigiService.UIL\obj\Debug\DigiService.UIL.csprojAssemblyReferen
 E:\p\DigiService\DigiService.UIL\obj\Debug\DigiService.UIL.csproj.CopyComplete
 E:\p\DigiService\DigiService.UIL\obj\Debug\DigiService.UIL.dll
 E:\p\DigiService\DigiService.UIL\obj\Debug\DigiService.UIL.pdb
+E:\p\DigiService\DigiService.UIL\bin\Microsoft.Web.Infrastructure.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Helpers.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Mvc.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Razor.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.Deployment.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.Razor.dll
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Helpers.xml
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Mvc.xml
+E:\p\DigiService\DigiService.UIL\bin\System.Web.Razor.xml
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.xml
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.Deployment.xml
+E:\p\DigiService\DigiService.UIL\bin\System.Web.WebPages.Razor.xml

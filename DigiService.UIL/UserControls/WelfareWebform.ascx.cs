@@ -7,22 +7,20 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace DigiService.UIL
+namespace DigiService.UIL.UserControls
 {
-    public partial class CenteralLabWebForm2 : System.Web.UI.Page
+    public partial class WelfareWebform : System.Web.UI.UserControl
     {
-        public List<ReSource> MultyResoure = new List<ReSource>();
-        public List<CenteralLab> AllcenteralLabs = new List<CenteralLab>();
+        public List<ReSource> reSources = new List<ReSource>();
+
+        public List<CenteralLab> allcenteralLabs = new List<CenteralLab>();
         protected void Page_Load(object sender, EventArgs e)
         {
             CenteralLabManager centralLabManager = new CenteralLabManager();
-            AllcenteralLabs = centralLabManager.SelectAll();
+            allcenteralLabs = centralLabManager.SelectAllWelfare();
 
             ReSourceManager reSourceManager = new ReSourceManager();
-            MultyResoure = reSourceManager.SelectMultySelect();
-
-
-
+            reSources = reSourceManager.SelectResource();
         }
     }
 }
