@@ -27,5 +27,6 @@ namespace DigiService.BLL
             CeterallabDao ceterallabDao = new CeterallabDao();
             return ceterallabDao.SelectAllWelfare();
         }
+
     }
 }

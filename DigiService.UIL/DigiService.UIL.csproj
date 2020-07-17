@@ -89,7 +89,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccessLabFani.aspx" />
+    <Content Include="AccessPart.aspx" />
     <Content Include="CenteralLabForm.aspx" />
+    <Content Include="OneResource.aspx" />
     <Content Include="ShowTwoParts.aspx" />
     <Content Include="Styles\Style.css" />
     <Content Include="UserControls\CenteralLabWebForm2.ascx" />
@@ -97,12 +100,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessLabFani.aspx.cs">
+      <DependentUpon>AccessLabFani.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLabFani.aspx.designer.cs">
+      <DependentUpon>AccessLabFani.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessPart.aspx.cs">
+      <DependentUpon>AccessPart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessPart.aspx.designer.cs">
+      <DependentUpon>AccessPart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CenteralLabForm.aspx.cs">
       <DependentUpon>CenteralLabForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CenteralLabForm.aspx.designer.cs">
       <DependentUpon>CenteralLabForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OneResource.aspx.cs">
+      <DependentUpon>OneResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OneResource.aspx.designer.cs">
+      <DependentUpon>OneResource.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShowTwoParts.aspx.cs">
@@ -138,6 +162,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bootstrap4\" />
     <Folder Include="Images\" />
     <Folder Include="Scripts\" />
   </ItemGroup>

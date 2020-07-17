@@ -39,8 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaManager.cs" />
     <Compile Include="CenteralLabManager.cs" />
+    <Compile Include="CollegeManager.cs" />
+    <Compile Include="DepartmentManager.cs" />
+    <Compile Include="HeadNameResourceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestManager.cs" />
     <Compile Include="ReSourceManager.cs" />
   </ItemGroup>
   <ItemGroup>

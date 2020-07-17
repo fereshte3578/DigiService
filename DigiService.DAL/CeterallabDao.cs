@@ -100,11 +100,15 @@ namespace DigiService.DAL
                 return null;
             }
 
+
+
             return allcenteralLabs;
         }
 
         public List<CenteralLab> SelectAll()
         {
+
+
              SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = true");
              SqlCommand sqlCommand = sqlConnection.CreateCommand();
              sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
