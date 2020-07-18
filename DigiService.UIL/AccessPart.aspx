@@ -4,13 +4,23 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-            <meta charset="UTF-8">
+        <meta charset="UTF-8">
          <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style3.css">
+    <script src="jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,15 +34,51 @@
             <% string Email = headNameResources[i].Email; %>
             <% string Fullname = headNameResources[i].Fullname; %>
             <% string TellPhone = headNameResources[i].TellePhone; %>
-            <% if (ResourceId == 1)
+                //اون آیدی که میفرستی تئ این صفحه برابر این بزار
+            <% if (ResourceId == 2)
                      {%>
-            <table style="width : 100%;border :solid;border-color : #ff5e57;">
+                <div class="row" style="padding-bottom : 5%;padding-top : 0%;padding-right : 2%;" dir="rtl">
+                    <div class="col-sm-6 col-md-6 col-lg-6" dir="rtl">
+               <table style="width : 100%;">
+                   <tr> 
+                       <td style="color : black;font-weight :bold;font-size:16px; padding-left : 70%;padding-bottom :2%;padding-top : 5%;">
+                           اطلاعات مربوط به مدیر دستگاه : 
+                       </td>
+                   </tr>
+                  <tr style="background-color : #d2dae2; direction:rtl;">
+                     <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 5%">
+                              نام و نام خانوادگی :
+                    </td>
+                    <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 5%">
+                                  <%  = Fullname %>
+                     </td>
+                     </tr>
+                     <tr style=" direction:rtl;">
+                        <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 9%;">
+                                    شماره تلفن : 
+                       </td>
+                       <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 4%">
+                                <% = TellPhone %>
+                       </td>
+                    </tr>
+                    <tr style="background-color : #d2dae2; direction:rtl;">
+                       <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 13%">
+                                 ایمیل : 
+                       </td>
+                       <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;">
+                               <% = Email %>
+                        </td>
+                    </tr>
+            </table>
+                        </div>
+                    </div>
+            <table style="width : 60%;border :solid;border-color : #ff5e57;">
                     <tr style="direction :rtl ">
                         <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">نام دستگاه </td>
                         <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">زمان دستگاه</td>
-                        <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">نام درخواست دهنده</td>
+                        <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 3%;border-color : #ff5e57;">نام درخواست دهنده</td>
                         <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">روز درخواست دستگاه</td>
-                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%;">زمان درخواست</td>
+                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">زمان درخواست</td>
                     </tr>
             <% for (int r = 0; r < 4; r++)
                      { %>
@@ -58,7 +104,7 @@
                         <td style ="width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% = PresentHour %></td>
                         <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% =UserId %></td>
                         <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"> <% = DayReception %></td>
-                        <td style ="width : 20%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%" dir="rtl"> <% = StartHour %> to <% = FinishHour %> </td>
+                        <td style ="width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"> <% = StartHour %> to <% = FinishHour %> </td>
            </tr>
             <% } %>
             <%} %>
