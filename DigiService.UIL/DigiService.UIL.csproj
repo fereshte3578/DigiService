@@ -92,7 +92,7 @@
     <Content Include="AccessLabFani.aspx" />
     <Content Include="AccessPart.aspx" />
     <Content Include="CenteralLabForm.aspx" />
-    <Content Include="ManageLab.aspx" />
+    <Content Include="LabManage.aspx" />
     <Content Include="OneResource.aspx" />
     <Content Include="ShowTwoParts.aspx" />
     <Content Include="Styles\Style.css" />
@@ -122,12 +122,12 @@
     <Compile Include="CenteralLabForm.aspx.designer.cs">
       <DependentUpon>CenteralLabForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ManageLab.aspx.cs">
-      <DependentUpon>ManageLab.aspx</DependentUpon>
+    <Compile Include="LabManage.aspx.cs">
+      <DependentUpon>LabManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ManageLab.aspx.designer.cs">
-      <DependentUpon>ManageLab.aspx</DependentUpon>
+    <Compile Include="LabManage.aspx.designer.cs">
+      <DependentUpon>LabManage.aspx</DependentUpon>
     </Compile>
     <Compile Include="OneResource.aspx.cs">
       <DependentUpon>OneResource.aspx</DependentUpon>

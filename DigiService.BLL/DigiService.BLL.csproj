@@ -44,6 +44,7 @@
     <Compile Include="CollegeManager.cs" />
     <Compile Include="DepartmentManager.cs" />
     <Compile Include="HeadNameResourceManager.cs" />
+    <Compile Include="LabManageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestManager.cs" />
     <Compile Include="ReSourceManager.cs" />
