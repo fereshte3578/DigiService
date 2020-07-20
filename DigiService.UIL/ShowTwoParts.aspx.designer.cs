@@ -15,24 +15,6 @@ namespace DigiService.UIL
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Welfare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DigiService.UIL.UserControls.WelfareWebform Welfare;
-
-        /// <summary>
         /// Central control.
         /// </summary>
         /// <remarks>
@@ -40,5 +22,14 @@ namespace DigiService.UIL
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DigiService.UIL.UserControls.CenteralLabWebForm2 Central;
+
+        /// <summary>
+        /// WelfareWebform1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DigiService.UIL.UserControls.WelfareWebform WelfareWebform1;
     }
 }

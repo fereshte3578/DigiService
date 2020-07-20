@@ -46,10 +46,11 @@
                          <%for (int m = 0; m < 3; m++)
                            { %>
                            <%int AreaId = MultyResoure[m].AreaId;%>
+                           <% int Id = MultyResoure[m].id; %>
                            <%if (ID == AreaId)
                            { %>
                              <% string n = MultyResoure[m].NameDivice; %>
-                             <p style="color :slategray;padding-right : 2%;"><% =n %></p>
+                            <a href="../OneResource.aspx?IDRESOUTCE=<% = Id %>" ><p style="color :slategray;padding-right : 2%;"><% =n %></p></a>
 
                            <%} %>
 
@@ -65,7 +66,9 @@
 
         </div>
 
+    <script>
 
+    </script>
    
 </body>
 </html>

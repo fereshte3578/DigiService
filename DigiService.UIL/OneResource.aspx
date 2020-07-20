@@ -14,17 +14,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
         <div>
            <div class="container-fluid" style="padding-right:2%;padding-left:2%;">
         
+              <asp:HiddenField runat="server" ID="HiddenFieldIdResource" ClientIDMode="Static"/>
+               <%  string isGet = HiddenFieldIdResource.Value; %>
+               
+               
                <%for (int m = 0; m < 3; m++)
                    { %>
-               <% int IsGet = 3; %>
+               <% int Idget = int.Parse(isGet.ToString()); %>
                   
                <% int IdR = MultyResoure[m].id; %>
 
 
-               <% if (IdR == IsGet)
+               
+               <% if (IdR == Idget)
                    { %>
               
                <% string NameDivice = MultyResoure[m].NameDivice; %>
@@ -35,6 +41,7 @@
                <% string descrip = MultyResoure[m].descrip; %>
                <% string TypeHour = MultyResoure[m].TypeHour; %>
                <% string PresentHour = MultyResoure[m].PresentHour; %>
+
                <% for (int n = 0; n < 3; n++)
                    {%>
                <% int HeadNameId = headNameResources[n].ResourceHeadNameId; %>
