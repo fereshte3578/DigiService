@@ -24,7 +24,8 @@ namespace DigiService.DAL
             //make a command
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
-            sqlCommand.CommandText = "TakeCollege";
+            sqlCommand.CommandText = "TakeTimes";
+
 
             TimeReSource TmpTime = null;
 
@@ -37,11 +38,20 @@ namespace DigiService.DAL
                 while (sqlDataReader.Read())
                 {
                     TmpTime = new TimeReSource();
-
-                    TmpCollege.id = sqlDataReader.GetInt32(0);
+                    TmpTime.id = sqlDataReader.GetInt32(0);
 
                     if (sqlDataReader.IsDBNull(1) == false)
-                        TmpCollege.title = sqlDataReader.GetString(1)
+                        TmpTime.ReSourceId = sqlDataReader.GetInt32(1);
+
+                    if (sqlDataReader.IsDBNull(2) == false)
+                        TmpTime.wichday = sqlDataReader.GetString(2);
+
+                    if (sqlDataReader.IsDBNull(3) == false)
+                        TmpTime.StartHour = sqlDataReader.GetString(3);
+
+                    if (sqlDataReader.IsDBNull(4) == false)
+                        TmpTime.FinishHour = sqlDataReader.GetString(4);
+
 
                     timeReSources.Add(TmpTime);
                 }

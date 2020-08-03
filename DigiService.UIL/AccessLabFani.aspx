@@ -30,16 +30,16 @@
                     </div>
                 </div>
                 <hr />
-                 <table style="width : 100%;border :solid;border-color : #ff5e57;">
+                 <table style="width : 100%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
                     <tr style="direction :rtl ">
-                        <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%;border-color : #ff5e57;">دانشکده</td>
-                        <td style ="border :solid;width : 20%; padding-bottom : 1%;padding-top : 1%;padding-left : 10%;border-color : #ff5e57;">اسم آزمایشگاه</td>
-                        <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">نام دستگاه </td>
-                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">زمان دستگاه</td>
-                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">نام مسول دستگاه</td>
-                        <td style ="border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">نام درخواست دهنده</td>
-                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #ff5e57;">روز درخواست دستگاه</td>
-                        <td style ="border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%;">زمان درخواست</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">دانشکده</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">اسم آزمایشگاه</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">نام دستگاه </td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">زمان دستگاه</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">نام مسول دستگاه</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">نام درخواست دهنده</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">روز درخواست </td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">زمان درخواست</td>
                     </tr>
 
             <% for (int j = 0; j < 4; j++)
@@ -88,14 +88,14 @@
                      <% string NameHead = headNameResources[l].Fullname; %>
 
                      <tr style="direction :rtl ">
-                         <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%;" dir="rtl"><% = TitleCollege %></td>
-                        <td style ="width : 20%; padding-bottom : 1%;padding-top : 1%;padding-left : 7%;" dir="rtl"><% = titleArea %></td>
-                        <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% = NameDivice %></td>
-                        <td style ="width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% = PresentHour %></td>
-                        <td style ="width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% = NameHead %></td>
-                        <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"><% =UserId %></td>
-                        <td style ="width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%" dir="rtl"> <% = DayReception %></td>
-                        <td style ="width : 20%; padding-bottom : 1%;padding-top : 1%;padding-left : 2%" dir="rtl"> <% = StartHour %> to <% = FinishHour %> </td>
+                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% = TitleCollege %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% = titleArea %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% = NameDivice %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% = PresentHour %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% = NameHead %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"><% =UserId %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"> <% = DayReception %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl" dir="rtl"> <% = StartHour %> _ <% = FinishHour %> </td>
                     </tr>
                      <%} %>
                      <% } %>

@@ -11,18 +11,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<style>
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
 </head>
 <body>
     <form id="form1" runat="server">
 
         <div>
-           <div class="container-fluid" style="padding-right:2%;padding-left:2%;">
+           <div class="container-fluid" dir="rtl">
         
               <asp:HiddenField runat="server" ID="HiddenFieldIdResource" ClientIDMode="Static"/>
                <%  string isGet = HiddenFieldIdResource.Value; %>
                
                
-               <%for (int m = 0; m < 3; m++)
+               <%for (int m = 0; m < 4; m++)
                    { %>
                <% int Idget = int.Parse(isGet.ToString()); %>
                   
@@ -58,10 +67,10 @@
                     
                 </div>
                 <div class="col-sm-3">
-                    <button type="button" style="background-color :#eb4d4b;color:white;border-radius : 5px;border :none;font-size :15px;" class="btn" data-toggle="modal" data-target="#myHead" > مسؤل:<% = FullName %></button>
+                    <button type="button" style="background-color :#eb4d4b;color:white;border-radius : 90px;border :none;padding-top:1%;font-size :15px;" class="btn" data-toggle="modal" data-target="#myHead" > مسؤل:<% = FullName %></button>
                 </div>
             </div>
-               <div class="modal fade" id="myHead" role="dialog">
+               <div class="modal fade" id="myHead" role="dialog" style="padding-top : 5%;">
                            <div class="modal-dialog modal-md">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -109,9 +118,7 @@
                    </div>
                    <div class="col-12 col-sm-8 col-md-8 col-xl-8">
                        <div class="row" dir="rtl" >
-                           <div class="col-12 col-sm-2 ccl-md-2 col-lg-2 col-xl-2">
                                <p style="color:black ; font-size : 15px;" dir="rtl"> <% = NameDivice %></p>
-                           </div>
                        </div>
                        <hr />
                        <div class="row" dir="rtl">
@@ -129,7 +136,7 @@
                            </div>
                        </div>
                        
-                       <div class="modal fade" id="myTime" role="dialog">
+                       <div class="modal fade" id="myTime" role="dialog" style="padding-top : 8%;">
                            <div class="modal-dialog modal-md">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -142,76 +149,86 @@
                                         <div class="row">
                                             <p style="padding-right : 3%;color : #ff5252;font-weight :bold;float:right;"> <% = PresentHour %> </p>
                                         </div>
+                                        <% for (int t = 0; t < 12; t++)
+                                        { %>
+
+                                        <% int IdTime = timeReSources[t].id; %>
+                                        <% int TimeIdRESOURCE = timeReSources[t].ReSourceId; %>
+                                        <% if (TimeIdRESOURCE == IdR)
+                                        { %>
+                                        <% string TimeWichday = timeReSources[t].wichday; %>
+                                        <% string TimeStartHour = timeReSources[t].StartHour;%>
+                                        <% string TimeFinishHour = timeReSources[t].FinishHour; %>
+                                        <div class="row">
+                                             <p style="color : black;font-weight:bolder;float:right;padding-right : 3%"> <% = TimeWichday %> <% = TimeStartHour %> تا  <% = TimeFinishHour %> </p>
+                                        </div>
+                                        <%} %>
+
+                                        <%} %>
                                        
                                     </div>
 
                                  </div>
                             </div>
                        </div>
-                           
+                           <br />
+                       <br />
                           <div class="row" dir="rtl">
-                              <div class="col-12 col-sm-2 col-md-2 col-xl-2 col-lg-2">
                                   <p style="font-size : 15px;color :darkslategrey;"> ویژگی ها :  </p>
-                              </div>
                           </div>
                                
-                         <div class="row" dir="rtl">  
-                           <div class="col-12 col-sm-1 col-md-2 col-xl-2 col-lg-2">
-                              <p style="color : lightslategrey; font-size : 12px;"> دوره استفاده : </p>
-                           </div>
-                             <div class="col-12 col-sm-2 col-md-2 col-xl-2 col-lg-2">
-                              <p style="color :#485460; font-size : 12px;font-weight:bold;"><% = TypeHour %></p>
-                           </div>
+                         <div class="row" dir="rtl">
+                              <p style="color : lightslategrey; font-size : 12px;padding-right : 2%;"> <span class="dot"></span>  دوره استفاده : <p style="color :#485460; font-size : 12px;padding-right : 0px;font-weight:bold;"><% = TypeHour %></p> </p>
                        </div>
-                       <div class="row">
-                           <div class="col-12 col-sm-2 col-md-2 col-xl-2 col-lg-2">
-                                  <p style="font-size : 15px;color :darkslategrey;">   هزینه ها :  </p>
-                              </div>
-                       </div>
+                       <br />
+                       <br />
                        <div class="row" dir="rtl">
-                           <table style="width:70%;" dir="rtl">
-                               <tr style="background-color : #f1f2f6;padding-right:0px;">
-                                   <td style="width:50%;direction:rtl;float:right">
-                                       عنوان
-                                   </td>
-                                   <td style="padding-left : 10%; direction:rtl;">
-                                       هزینه
-                                   </td>
-                               </tr>
-                               <tr style="padding-right:0px;">
-                                   <td style="width:50%;">
-                                       هزینه برای دانشجویان فنی و مهندسی
-                                   </td>
-                                   <td style="padding-left : 10%; direction:rtl;" >
-                                       <% = Cost %>(ریال)
-                                   </td>
-                               </tr>
-                               <tr style="background-color : #f1f2f6;padding-right:0px;">
-                                   <td style="width:50%;">
-                                       هزینه برای اساتید فنی و مهندسی
-                                   </td>
-                                   <td style="padding-left : 10%; direction:rtl;">
-                                       <% = CostTeacher %>(ریال)
-                                   </td>
-                               </tr>
-                               <tr style="padding-right:0px;">
-                                   <td style="width:50%;">
-                                       هزینه برای اساتید دانشگاه های دیگر
-                                   </td>
-                                   <td style="padding-left : 10%; direction:rtl;" >
-                                       <% = CostOtherTeacher %>(ریال)
-                                   </td>
-                               </tr>
-                           </table>
+                                  <p style="padding-right : 10%;padding-top : 2%;font-size : 15px;color :darkslategrey;">   هزینه ها :  </p>
+                       </div>
+                       <br />
+                       <div class="row" dir="rtl" style="padding-right : 5%;">
+                           <table style="width : 90%;">
+                                            <tr style="background-color : #d2dae2;">
+                                                <td style="width : 30%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                    عنوان
+                                                </td>
+                                                <td style="width : 30%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    هزینه
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                    هزینه برای دانشجویان فنی و مهندسی 
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <% = Cost %>(ریال)
+                                                </td>
+                                            </tr>
+                                            <tr style="background-color : #d2dae2;">
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                   هزینه برای اساتید فنی و مهندسی
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <% = CostTeacher %>(ریال)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                   هزینه برای اساتید دانشگاه های دیگر
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <% = CostOtherTeacher %>(ریال)
+                                                </td>
+                                            </tr>
+                                        </table>
+                           <br />
                        </div>
                         </div>
                    </div>
                <br />
                <br />
                <div class="row" dir="rtl">
-                   <div class="col-12 col-sm-2 col-md-2 col-xl-2 col-lg-2">
-                       <p style="font-size : 15px;color :darkslategrey;">مشخصات : </p>
-                   </div>
+                       <p style="padding-right : 10%;padding-top : 2%;font-size : 15px;color :darkslategrey;">مشخصات : </p>
                </div>
                <hr />
                <div class="row" dir="rtl">

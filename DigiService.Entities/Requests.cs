@@ -14,6 +14,7 @@ namespace DigiService.Entities
         public string DayReception { get; set; }
         public string StartHour { get; set; }
         public string Finishhour { get; set; }
+        public int Status { get; set; }
 
     }
 }

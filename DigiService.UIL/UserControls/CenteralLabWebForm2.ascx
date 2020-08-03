@@ -30,27 +30,27 @@
              <% string IsActive = AllcenteralLabs[s].IsActived; %>
              <% int ID = AllcenteralLabs[s].id; %>
 
-                <div class="col-12 col-sm-12 col-lg-4 col-md-4">
-                    <div class="card-body" style=" padding : 8%  ;text-align:right;background: #fff;border-radius: 2px;;
+                <div class="col-12 col-sm-12 col-lg-3 col-md-3">
+                    <div class="card-body" style=" padding : 8%  ;text-align:right;background: #fff;border-radius: 2px;
                        height: 270px;margin: 1rem;position: relative;width: 100%;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); ">
 
 
-                         <h5 style="font-weight:bold;color : #EA2027;"><% =Title %></h5>
+                         <h5 style="font-weight:bold;color : #30336b;"><% =Title %></h5>
                         <p style="color : black; font-weight : bold;">
                             وضعیت بخش : 
                         </p>
-                         <p style="color :slategray;padding-right : 2%;"><% =IsActive %></p>
+                         <p style="color :#7ed6df;font-weight:bold;font-size:12px;padding-right : 2%;"><% =IsActive %></p>
                         <p style="color : black; font-weight : bold;">
                              دستگاه های بخش  : 
                         </p>
-                         <%for (int m = 0; m < 3; m++)
+                         <%for (int m = 0; m < 4; m++)
                            { %>
                            <%int AreaId = MultyResoure[m].AreaId;%>
                            <% int Id = MultyResoure[m].id; %>
                            <%if (ID == AreaId)
                            { %>
                              <% string n = MultyResoure[m].NameDivice; %>
-                            <a href="../OneResource.aspx?IDRESOUTCE=<% = Id %>" ><p style="color :slategray;padding-right : 2%;"><% =n %></p></a>
+                            <a href="../OneResource.aspx?IDRESOUTCE=<% = Id %>" ><p style="color :#22a6b3;padding-right : 2%;font-weight : bold;"><% =n %></p></a>
 
                            <%} %>
 

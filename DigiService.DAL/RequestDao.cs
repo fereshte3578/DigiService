@@ -54,7 +54,8 @@ namespace DigiService.DAL
                     if (sqlDataReader.IsDBNull(5) == false)
                         TmpRequest.Finishhour = sqlDataReader.GetString(5);
 
-
+                    if (sqlDataReader.IsDBNull(6) == false)
+                        TmpRequest.Status = sqlDataReader.GetInt32(6);
 
                     requests.Add(TmpRequest);
                 }
