@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="60" viewBox="0 0 41 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="41" height="60" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icons_24px_Black_Unlocked" data-name="Icons/24px/Black/Unlocked" clip-path="url(#clip-path)">
+    <g id="padlock-unlocked" transform="translate(0 0)">
+      <path id="Shape" d="M20.5,61A20.44,20.44,0,0,1,0,40.667a20.188,20.188,0,0,1,5.124-13.4V15.251a15.376,15.376,0,0,1,30.751,0H30.749a10.064,10.064,0,0,0-3.006-7.187,10.263,10.263,0,0,0-17.494,7.187v7.832A20.378,20.378,0,1,1,20.5,61Zm0-30.5a7.6,7.6,0,0,0-2.562,14.784v5.549h5.124V45.283A7.6,7.6,0,0,0,20.5,30.5Z" transform="translate(0 0)" fill="#172b4d"/>
+    </g>
+  </g>
+</svg>
