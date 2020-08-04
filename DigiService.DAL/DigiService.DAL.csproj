@@ -49,6 +49,9 @@
     <Compile Include="RequestDao.cs" />
     <Compile Include="ReSourceDao.cs" />
     <Compile Include="TimeReSourceDao.cs" />
+    <Compile Include="userdao\UserDao.cs" />
+    <Compile Include="userlogindao\UserLoginDao.cs" />
+    <Compile Include="userprofiledao\UserProfileDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiService.Entities\DigiService.Entities.csproj">

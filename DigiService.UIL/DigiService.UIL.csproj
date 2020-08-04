@@ -92,11 +92,18 @@
     <Content Include="AccessLabFani.aspx" />
     <Content Include="AccessPart.aspx" />
     <Content Include="CenteralLabForm.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="LabManage.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="OneResource.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="ShowTwoParts.aspx" />
+    <Content Include="Signup.aspx" />
     <Content Include="Styles\Style.css" />
     <Content Include="UserControls\CenteralLabWebForm2.ascx" />
+    <Content Include="UserControls\UserControlsignup_header.ascx" />
+    <Content Include="UserControls\UserControl_Footer.ascx" />
+    <Content Include="UserControls\UserControl_Header.ascx" />
     <Content Include="UserControls\WelfareWebform.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -122,6 +129,13 @@
     <Compile Include="CenteralLabForm.aspx.designer.cs">
       <DependentUpon>CenteralLabForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LabManage.aspx.cs">
       <DependentUpon>LabManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -129,12 +143,26 @@
     <Compile Include="LabManage.aspx.designer.cs">
       <DependentUpon>LabManage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OneResource.aspx.cs">
       <DependentUpon>OneResource.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="OneResource.aspx.designer.cs">
       <DependentUpon>OneResource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShowTwoParts.aspx.cs">
@@ -144,12 +172,40 @@
     <Compile Include="ShowTwoParts.aspx.designer.cs">
       <DependentUpon>ShowTwoParts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CenteralLabWebForm2.ascx.cs">
       <DependentUpon>CenteralLabWebForm2.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\CenteralLabWebForm2.ascx.designer.cs">
       <DependentUpon>CenteralLabWebForm2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlsignup_header.ascx.cs">
+      <DependentUpon>UserControlsignup_header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlsignup_header.ascx.designer.cs">
+      <DependentUpon>UserControlsignup_header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Footer.ascx.cs">
+      <DependentUpon>UserControl_Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Footer.ascx.designer.cs">
+      <DependentUpon>UserControl_Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Header.ascx.cs">
+      <DependentUpon>UserControl_Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Header.ascx.designer.cs">
+      <DependentUpon>UserControl_Header.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\WelfareWebform.ascx.cs">
       <DependentUpon>WelfareWebform.ascx</DependentUpon>
@@ -163,6 +219,10 @@
     <ProjectReference Include="..\DigiService.BLL\DigiService.BLL.csproj">
       <Project>{f340aff6-e113-4488-9357-f3a1e3268494}</Project>
       <Name>DigiService.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DigiService.DAL\DigiService.DAL.csproj">
+      <Project>{ab29d667-1d1b-4a75-a23b-b8b4d7748a94}</Project>
+      <Name>DigiService.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigiService.Entities\DigiService.Entities.csproj">
       <Project>{1bb49841-47a5-4adc-9d4a-e02e1cacea59}</Project>

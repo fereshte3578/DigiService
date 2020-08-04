@@ -49,6 +49,9 @@
     <Compile Include="RequestManager.cs" />
     <Compile Include="ReSourceManager.cs" />
     <Compile Include="TimeReSourceManager.cs" />
+    <Compile Include="Userloginmanager\UserLoginManager.cs" />
+    <Compile Include="usermanager\UserManagers.cs" />
+    <Compile Include="userprofile\UserProfileManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiService.DAL\DigiService.DAL.csproj">
@@ -60,6 +63,7 @@
       <Name>DigiService.Entities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
