@@ -19,7 +19,7 @@
               <fereshte:CenteralLabWebForm2 runat="server" ID="Central" />
         </div>
     </div>
-
+      
 
     <div style="background-color : #ffffff;">
         <div class="container-fluid" style="padding : 7%;" dir="rtl">
