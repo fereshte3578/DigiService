@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace DigiService.UIL.UserControls
 {
-	public partial class UserControl_Header : System.Web.UI.UserControl
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class UserControl_Footer : System.Web.UI.UserControl
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
-	}
+        }
+    }
 }
