@@ -111,7 +111,7 @@
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> 
                             <% if (STATUS == 0)
                                {%>
-                            <asp:Button ID="Button_reception" runat="server" Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White"></asp:Button>
+                            <asp:Button runat="server" ID="Button_receptionUpdat" OnClick="Button_reception" Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White"></asp:Button>
                             <%} %>
                             <% if (STATUS == 1)
                                 { %>

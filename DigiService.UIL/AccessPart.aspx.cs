@@ -25,7 +25,13 @@ namespace DigiService.UIL
             RequestManager requestManager = new RequestManager();
             requests = requestManager.SelectRequests();
 
+        }
 
+        protected void Button_reception(object sender, EventArgs e)
+        {
+
+            Requests request = new Requests();
+            request.id = 
         }
     }
 }

@@ -86,12 +86,14 @@
 
             <% if (idResource == ResourceIdReq)
             {%>
+                <% int idRequest = requests[q].id; %>
             <% string day = requests[q].DayReception;%>
             <% string stsrtHour = requests[q].StartHour; %>
             <% string Finishhour = requests[q].Finishhour; %>
             <% int UserId = requests[q].UserId; %>
 
                 <tr style="padding-bottom : 5%;padding-top : 5%;">
+                    
                     <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = title %> </td>
                     <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = FullnameManage %></td>
                     <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = NameDivice %> </td>
