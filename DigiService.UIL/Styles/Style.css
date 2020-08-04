@@ -1,2 +1,191 @@
-﻿body {
+﻿/*---------------Header-----------------*/
+.topnav{
+    height:auto;
+    width:100%;
+    padding:10px;
+    border-bottom:solid #000000 1px;
+
+}
+.img1{
+    float: right; 
+  
+}
+.btn1{
+     background-color: #227093; 
+     color: white; 
+     border: none; 
+     width: 60px; 
+     height: 40px; 
+     border-radius: 5px;
+     padding:10px;
+}
+.example{
+    max-width: 300px; 
+    margin-left: 50px; 
+    margin-top: 30px;
+}
+.input_search_header{
+   width: 300px; 
+   margin-top: 25px; 
+   padding: 5px; 
+   border-radius: 5px; 
+   border: solid; 
+   border-color: #227093;
+}
+.btn_search_header{
+    margin-top: 25px; 
+    border-radius: 5px; 
+    border: solid; 
+    border-color: #227093;
+    padding:5px;
+}
+
+/*-----------------footer----------------------------*/
+
+.footer {
+
+    width: 100%;
+    height: 400px;
+    background: url('https://negativespace.co/wp-content/uploads/2020/06/negative-space-abstract-swirl-line-background-5.jpg');
+    clip: rect(0px, 60px, 300px, 5px);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+
+}
+
+div.transbox {
+
+    background-color: rgba(23,43,77,.62);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+
+
+}
+
+div.transbox p {
+    color: white ;
+    z-index: 5;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+}
+
+@media only screen and (max-width: 755px) {
+    .footer {
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    div.transbox {
+        height: 1000px;
+    }
+}
+
+.btn:active {
+    border: none;
+}
+
+.btn:focus {
+    border: none;
+}
+.mb-0{
+    padding-right: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+    color: white;
+
+}
+.hr-footer{
+    color: white;
+    width: 80%;
+    padding-top: 0px;
+    background-color: white;
+
+}
+.footer-text-title{
+
+    font-size: 18px;
+    padding: 15px 0px 10px 5px;
+}
+footer a {
+    color: white;
+    font-size: 11px;
+
+}
+footer p{
+    color: white;
+    font-size: 11px;
+    line-height: 25px;
+
+}
+
+/*------------------signin-----------------------*/
+.textbox_signup{
+    
+    width:80%;
+    margin-top:20px;
+    margin-right:5px;
+    text-align:center;
+  
+}
+
+.btn_signup{
+    background-color: #172b4d;
+    width:95%;
+    border:none;
+    border-radius:50px;
+    height:45px;
+    margin-top:25px;
+    margin-right:5px;
+    color:white;
+}
+.imag_signup{
+    width:20px
+}
+.signup{
+    padding-top:300px;
+    padding-right:400px;
+    
+}
+
+.table_signup td{
+    padding-right:50px;
+}
+/*-------------------profile-------------------*/
+.card{
+    border:solid #000000 1px;
+     width:900px;
+    height:auto;
+     margin-top:100px;
+
+}
+.tbl_profile {
+    
+    width:900px;
+    height:auto;
+   
+}
+.tbl_profile td{
+    padding:20px;
+}
+.textbox-profile{
+    width:100%;
+}
+.btn-profile{
+    width:100%;
+    border:none;
+    background-color:#ae0e0e;
+    color:white;
+    height:50px;
+}
+.accont_active{
+    background-color:#28a90e;
+    width:50px;
+    height:auto;
+    border-radius:50px;
+    color:white;
+    border:none;
 }
