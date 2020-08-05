@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -67,6 +68,37 @@ namespace DigiService.DAL
                 return null;
             }
             return requests;
+        }
+
+        public bool Update0(Requests requests)
+        {
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
+            SqlCommand com = con.CreateCommand();
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandText = "Update0";
+
+            SqlParameter idParameter = com.Parameters.Add("@id", System.Data.SqlDbType.Int);
+            idParameter.Value = requests.id;
+            
+
+
+            try
+            {
+                con.Open();
+
+                int numAffected = com.ExecuteNonQuery();
+                con.Close();
+
+
+
+
+            }
+            catch (SqlException sqlException)
+            {
+                con.Close();
+                return false;
+            }
+            return true;
         }
     }
 }

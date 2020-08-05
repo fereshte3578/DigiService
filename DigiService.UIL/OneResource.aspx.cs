@@ -33,5 +33,11 @@ namespace DigiService.UIL
             HiddenFieldIdResource.Value = IdRes;
 
         }
+        protected void Btn1_Add(object sender, EventArgs e)
+        {
+           
+        }
     }
-}
+    
+
+    }
