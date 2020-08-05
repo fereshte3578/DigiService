@@ -15,5 +15,11 @@ namespace DigiService.BLL
             RequestDao requestDao = new RequestDao();
             return requestDao.SelectRequests();
         }
+
+        public bool Update0(Requests requests)
+        {
+            RequestDao requestDao = new RequestDao();
+            return requestDao.Update0(requests);
+        }
     }
 }
