@@ -38,6 +38,8 @@ namespace DigiService.UIL
                 TextBox2.Text = userselectid.Username.ToString();
                 TextBox3.Text = userselectid.Password.ToString();
                 TextBox4.Text = userselectid.Phone.ToString();
+                profile_name.Text = userselectid.Name.ToString() +""+ userselectid.Family.ToString();
+                
 
             }
 

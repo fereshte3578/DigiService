@@ -31,7 +31,8 @@
                                         <td colspan="2" align="center">
                                             <img src="Images/download.png" class="img-profile" width="130px" height="130px" />
                                             <center>
-                                <h4>پروفایل شما</h4>
+                                <asp:Label ID="profile_name" runat="server" Text=""></asp:Label>
+                                                <br />
                                 <span>وضعیت اکانت -</span>
                                 <asp:Button ID="Button2" CssClass="accont_active" runat="server" Text="آنلاین"></asp:Button>
                             </center>

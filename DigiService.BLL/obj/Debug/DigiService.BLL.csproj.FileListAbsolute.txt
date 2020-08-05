@@ -17,3 +17,12 @@ E:\p\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.csprojAssemblyReferen
 E:\p\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.csproj.CopyComplete
 E:\p\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.dll
 E:\p\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.pdb
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.BLL.dll
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.BLL.pdb
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.DAL.dll
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.Entities.dll
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.DAL.pdb
+D:\progectnewnet\DigiService\DigiService.BLL\bin\Debug\DigiService.Entities.pdb
+D:\progectnewnet\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.csprojResolveAssemblyReference.cache
+D:\progectnewnet\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.dll
+D:\progectnewnet\DigiService\DigiService.BLL\obj\Debug\DigiService.BLL.pdb
