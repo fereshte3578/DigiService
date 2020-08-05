@@ -27,16 +27,9 @@
         <Header:UserControl_Header runat="server" id="header"/>
         <fereshte:linknavbar runat="server" />
         <bodys:BodySlider runat="server" ID="BodySlider" />
-        <div id="myDiv">
-      <div style="background-color : #f5f6fa;">
-        <div class="container-fluid" style="padding : 7%;" dir="rtl">
-            <div class="row">
-                <p style="float : right;padding-right :2%;font-weight : bolder;color : #c23616;font-size : 15px;">آزمایشگاه های مرکزی  </p>
-            </div>
+       
               <fereshte:CenteralLabWebForm2 runat="server" ID="Central" />
-        </div>
-    </div>
-        </div>
+        
         <footer:UserControl_Footer runat="server" id="UserControl_Footer"/>
 
     

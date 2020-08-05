@@ -18,7 +18,7 @@ namespace DigiService.DAL
             //1.1.make new connection
 
 
-            SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = true");
+            SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835; ");
 
             //make a command
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
