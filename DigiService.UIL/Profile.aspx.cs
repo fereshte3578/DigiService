@@ -38,6 +38,9 @@ namespace DigiService.UIL
                 TextBox2.Text = userselectid.Username.ToString();
                 TextBox3.Text = userselectid.Password.ToString();
                 TextBox4.Text = userselectid.Phone.ToString();
+                profile_name.Text = userselectid.Name.ToString() + " " + userselectid.Family.ToString();
+                Label9.Text = userselectid.Name.ToString() + " " + userselectid.Family.ToString();
+                
 
             }
 
@@ -59,7 +62,7 @@ namespace DigiService.UIL
             UserProfileManager userProfileManager = new UserProfileManager();
             if (userProfileManager.Update_prof(userprof))
             {
-                Response.Write("<script>alert('به روزرسانی اطلاعات با موفقیت انجام شد.')</script>");
+                Label10.Text = "اطلاعات شما با موفقیت بروزرسانی شد:)";
             }
             else
             {
@@ -69,6 +72,16 @@ namespace DigiService.UIL
 
 
         }
+<<<<<<< HEAD
 
+=======
+        protected void btn_exit_profile(object sender, EventArgs e)
+        {
+            Session["Name"] = txtName.Text;
+            Session["id"] = hfUserID_prof.Value;
+            Response.Redirect("index.aspx");
+
+        }
+>>>>>>> 9544fe084d93f7f191b15f3883bf24bbf24b444e
     }
 }

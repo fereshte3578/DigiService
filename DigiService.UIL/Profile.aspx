@@ -15,102 +15,184 @@
     <link rel="stylesheet" href="Scripts/jquery-3.4.1.js" />
     <link rel="stylesheet" href="Scripts/bootstrap.min.js" />
 </head>
-<body>
+<body dir="rtl">
+
     <header:UserControlsignup_header runat="server" ID="header" />
 
     <form id="form1" runat="server">
-       
-                <div>
-                    <div class="row" align="center">
-                        <div class="col-1 col-lg-1"></div>
-                        <div class="col-10 col-lg-10">
-                            <asp:HiddenField runat="server" ID="hfUserID_prof" />
-                            <div class="card">
-                                <table class="tbl_profile">
-                                    <tr>
-                                        <td colspan="2" align="center">
-                                            <img src="Images/download.png" class="img-profile" width="130px" height="130px" />
-                                            <center>
-                                <h4>پروفایل شما</h4>
+
+        <div class="wrapper">
+            <div class="sidebar" align="right">
+                <div class="sidebar-header">
+                    <div class="circle-logo"></div>
+                    
+                    <asp:Label class="text-sidebar-header" ID="Label9" runat="server" Text=" "><p>خوش آمدید</p></asp:Label>
+                </div>
+              
+
+                <li>
+                    <a href="#">
+                        <img src="Images/Component 16 – 1.svg" class="image-sidebar" />پروفایل شخصی</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="Images/Component 17 – 1.svg" class="image-sidebar" />تغییر رمز عبور</a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="Images/Group 47.svg" class="image-sidebar" />
+                        اطلاعات شما</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="Images/Group 44.svg" class="image-sidebar" />پیام رسانی</a>
+                </li>
+
+                  
+            </div>
+            <div class="content">
+                <div class="nav-seller" align="left">
+                    <p align="right">پروفایل شما</p>
+                    <asp:Button class="btn-exit-profile" onclick="btn_exit_profile" Text="خروج" runat="server"/>
+                   
+                </div>
+                <div class="row mt-5 mt-5 text-right text-lg-right">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12" align="center">
+                        <div>
+                            <div class="row"  align="center">
+                                <div class="col-1 col-lg-1"></div>
+                                <div class="col-10 col-lg-10">
+                                    <asp:HiddenField runat="server" ID="hfUserID_prof" />
+                                   
+                                    <div class="card">
+                                        <table class="tbl_profile">
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    
+                                                    <center>
+                                <asp:Label ID="profile_name" runat="server" Text=""></asp:Label>
+                                                <br />
                                 <span>وضعیت اکانت -</span>
                                 <asp:Button ID="Button2" CssClass="accont_active" runat="server" Text="آنلاین"></asp:Button>
                             </center>
-                                        </td>
+                                                </td>
 
 
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <hr />
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <hr />
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:Label ID="Label1" runat="server" Text="نام:"></asp:Label>
-                                            <asp:TextBox class="textbox-profile" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="Label1" runat="server" Text="نام:"></asp:Label>
+                                                    <asp:TextBox class="textbox-profile" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
 
-                                        </td>
-                                        <td>
-                                            <asp:Label ID="Label2" runat="server" Text="نام خانوادگی:"></asp:Label>
-                                            <asp:TextBox class="textbox-profile" placeholder="نام خانوادگی" ID="TextBox1" runat="server"></asp:TextBox>
-                                        </td>
-                                    </tr>
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="Label2" runat="server" Text="نام خانوادگی:"></asp:Label>
+                                                    <asp:TextBox class="textbox-profile" placeholder="نام خانوادگی" ID="TextBox1" runat="server"></asp:TextBox>
+                                                </td>
+                                            </tr>
 
-                                    <tr>
-                                        <td>
-                                            <asp:Label ID="Label3" runat="server" Text="جنسیت:"></asp:Label>
-                                            <asp:DropDownList class="textbox-profile" ID="ddlGender" runat="server">
-                                                <asp:ListItem>مذکر</asp:ListItem>
-                                                <asp:ListItem>مونث</asp:ListItem>
-                                            </asp:DropDownList>
-                                        </td>
-                                        <td>
-                                            <asp:Label ID="Label4" runat="server" Text="ایمیل:"></asp:Label>
-                                            <asp:TextBox placeholder="ایمیل" class="textbox-profile" ID="txtEmail" runat="server"></asp:TextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3">
-                                            <asp:Label ID="Label5" runat="server" Text="آدرس:"></asp:Label>
-                                            <asp:TextBox ID="txtAddress" placeholder="آدرس" class="textbox-profile" TextMode="MultiLine" runat="server"></asp:TextBox></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:Label ID="Label6" runat="server" Text="نام کاربری:"></asp:Label>
-                                            <asp:TextBox placeholder="نام کاربری" class="textbox-profile" ID="TextBox2" runat="server"></asp:TextBox></td>
-                                        <td>
-                                            <asp:Label ID="Label7" runat="server" Text="پسورد:"></asp:Label>
-                                            <asp:TextBox placeholder="پسورد" class="textbox-profile" ID="TextBox3" TextMode="Password" runat="server"></asp:TextBox>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="Label3" runat="server" Text="جنسیت:"></asp:Label>
+                                                    <asp:DropDownList class="textbox-profile" ID="ddlGender" runat="server">
+                                                        <asp:ListItem>مذکر</asp:ListItem>
+                                                        <asp:ListItem>مونث</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="Label4" runat="server" Text="ایمیل:"></asp:Label>
+                                                    <asp:TextBox placeholder="ایمیل" class="textbox-profile" ID="txtEmail" runat="server"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <asp:Label ID="Label5" runat="server" Text="آدرس:"></asp:Label>
+                                                    <asp:TextBox ID="txtAddress" placeholder="آدرس" class="textbox-profile" TextMode="MultiLine" runat="server"></asp:TextBox></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="Label6" runat="server" Text="نام کاربری:"></asp:Label>
+                                                    <asp:TextBox placeholder="نام کاربری" class="textbox-profile" ID="TextBox2" runat="server"></asp:TextBox></td>
+                                                <td>
+                                                    <asp:Label ID="Label7" runat="server" Text="پسورد:"></asp:Label>
+                                                    <asp:TextBox placeholder="پسورد" class="textbox-profile" ID="TextBox3" TextMode="Password" runat="server"></asp:TextBox>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:Label ID="Label8" runat="server" Text="تلفن:"></asp:Label>
-                                            <asp:TextBox placeholder="تلفن" class="textbox-profile" ID="TextBox4" runat="server"></asp:TextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <asp:Button ID="Button1" class="btn-profile" runat="server" OnClick="btn_update_profile" Text="بروز رسانی اطلاعات شما" /></td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="Label8" runat="server" Text="تلفن:"></asp:Label>
+                                                    <asp:TextBox placeholder="تلفن" class="textbox-profile" ID="TextBox4" runat="server"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <asp:Button ID="Button1" class="btn-profile" OnClick="btn_update_profile" runat="server" Text="بروز رسانی اطلاعات شما" /></td>
+                                                <asp:Label ID="Label10" Style="color:red;" runat="server" Text=""></asp:Label>
+                                            </tr>
 
-                                    </tr>
+                                        </table>
+                                    </div>
+                                          
+                                    <br />
+                                    <br />
+                                    <br />
 
-                                </table>
+                                </div>
+                                <div class="col-1 col-lg-1"></div>
                             </div>
-                            <br />
-                            <br />
-                            <br />
+
 
                         </div>
-                        <div class="col-1 col-lg-1"></div>
+
+
+                    </div>
+                </div>
+                <div class="row  mt-5">
+                    <div class="col-lg-2"></div>
+
+                    <div class=" col-6 col-lg-2 col-md-6 col-sm-6" align="center" style="padding-bottom: 10px">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-6 col-sm-6" align="center" style="padding-bottom: 10px">
                     </div>
 
+                    <div class=" col-6 col-lg-2 col-md-6 col-sm-6" align="center" style="padding-bottom: 10px">
+                    </div>
 
+                    <div class="col-6 col-lg-2 col-md-6 col-sm-6" align="center" style="padding-bottom: 10px">
+                    </div>
+                    <div class="col-lg-2"></div>
                 </div>
-          
-    </form>
 
+
+                <div class="row" align="left">
+                    <div class="col-12">
+                        <footer class="footer-profile">
+
+                            <a href="#">
+                                <img src="Images/Het1PX.tif.svg" class="image-footer-profile-icon" /></a>
+                            <a href="#">
+                                <img src="Images/34hbmL.tif.svg" class="image-footer-profile-icon" /></a>
+                            <a href="#">
+                                <img src="Images/Component-1.svg" class="image-footer-profile-icon" /></a>
+                            <a href="#">
+                                <img src="Images/Component.svg" class="image-footer-profile-icon" /></a>
+
+
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
 </body>
 </html>

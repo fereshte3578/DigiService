@@ -13,3 +13,10 @@ E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csprojAssemblyReferen
 E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csproj.CopyComplete
 E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.dll
 E:\p\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.pdb
+D:\progectnewnet\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.dll
+D:\progectnewnet\DigiService\DigiService.DAL\bin\Debug\DigiService.DAL.pdb
+D:\progectnewnet\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.dll
+D:\progectnewnet\DigiService\DigiService.DAL\bin\Debug\DigiService.Entities.pdb
+D:\progectnewnet\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.csprojResolveAssemblyReference.cache
+D:\progectnewnet\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.dll
+D:\progectnewnet\DigiService\DigiService.DAL\obj\Debug\DigiService.DAL.pdb

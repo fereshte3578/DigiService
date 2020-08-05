@@ -1,76 +1,73 @@
 ﻿/*---------------Header-----------------*/
-.topnav{
-    height:auto;
-    width:100%;
-    padding:10px;
-    border-bottom:solid #000000 1px;
+.topnav {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid #000000 1px;
+}
 
+.img1 {
+    float: right;
 }
-.img1{
-    float: right; 
-  
+
+.btn1 {
+    background-color: #227093;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
 }
-.btn1{
-     background-color: #227093; 
-     color: white; 
-     border: none; 
-     width: 60px; 
-     height: 40px; 
-     border-radius: 5px;
-     padding:10px;
-}
-.example{
-    max-width: 300px; 
-    margin-left: 50px; 
+
+.example {
+    max-width: 300px;
+    margin-left: 50px;
     margin-top: 30px;
 }
-.input_search_header{
-   width: 300px; 
-   margin-top: 25px; 
-   padding: 5px; 
-   border-radius: 5px; 
-   border: solid; 
-   border-color: #227093;
-}
-.btn_search_header{
-    margin-top: 25px; 
-    border-radius: 5px; 
-    border: solid; 
+
+.input_search_header {
+    width: 300px;
+    margin-top: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid;
     border-color: #227093;
-    padding:5px;
+}
+
+.btn_search_header {
+    margin-top: 25px;
+    border-radius: 5px;
+    border: solid;
+    border-color: #227093;
+    padding: 5px;
 }
 
 /*-----------------footer----------------------------*/
 
 .footer {
-
     width: 100%;
     height: 400px;
-    background: url('https://negativespace.co/wp-content/uploads/2020/06/negative-space-abstract-swirl-line-background-5.jpg');
+    background: url('https://negativespace.co/wp-content/uploads/2020/06/negative-space-abstract-turbulent-sphere-1.jpg');
     clip: rect(0px, 60px, 300px, 5px);
     background-position: center;
     background-size: cover;
     color: white;
-
-
 }
 
 div.transbox {
-
     background-color: rgba(23,43,77,.62);
     width: 100%;
     height: 400px;
     background-size: cover;
-
-
 }
 
-div.transbox p {
-    color: white ;
-    z-index: 5;
-    opacity: 0.9;
-    filter: alpha(opacity=60);
-}
+    div.transbox p {
+        color: white;
+        z-index: 5;
+        opacity: 0.9;
+        filter: alpha(opacity=60);
+    }
 
 @media only screen and (max-width: 755px) {
     .footer {
@@ -91,101 +88,347 @@ div.transbox p {
 .btn:focus {
     border: none;
 }
-.mb-0{
+
+.mb-0 {
     padding-right: 0px;
     margin-right: 0px;
     font-size: 20px;
     color: white;
-
 }
-.hr-footer{
+
+.hr-footer {
     color: white;
     width: 80%;
     padding-top: 0px;
     background-color: white;
-
 }
-.footer-text-title{
 
+.footer-text-title {
     font-size: 18px;
     padding: 15px 0px 10px 5px;
 }
+
 footer a {
     color: white;
     font-size: 11px;
-
 }
-footer p{
+
+footer p {
     color: white;
     font-size: 11px;
     line-height: 25px;
-
 }
 
 /*------------------signin-----------------------*/
-.textbox_signup{
-    
-    width:80%;
-    margin-top:20px;
-    margin-right:5px;
-    text-align:center;
-  
+.textbox_signup {
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 5px;
+    text-align: center;
 }
 
-.btn_signup{
+.btn_signup {
     background-color: #172b4d;
-    width:95%;
-    border:none;
-    border-radius:50px;
-    height:45px;
-    margin-top:25px;
-    margin-right:5px;
-    color:white;
-}
-.imag_signup{
-    width:20px
-}
-.signup{
-    padding-top:300px;
-    padding-right:400px;
-    
+    width: 95%;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    margin-top: 25px;
+    margin-right: 5px;
+    color: white;
 }
 
-.table_signup td{
-    padding-right:50px;
+.imag_signup {
+    width: 20px;
+}
+
+.signup {
+    padding-top: 300px;
+    padding-right: 400px;
+}
+.table_signup{
+    width:80%;
+}
+.table_signup td {
+    padding-right: 50px;
 }
 /*-------------------profile-------------------*/
-.card{
-    border:solid #000000 1px;
-     width:900px;
-    height:auto;
-     margin-top:100px;
-
+.card {
+    border: solid #172b4d 1px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
 }
+
 .tbl_profile {
-    
-    width:900px;
-    height:auto;
+    width: 100%;
+    height: auto;
+}
+
+    .tbl_profile td {
+        padding: 20px;
+    }
+
+.textbox-profile {
+    width: 100%;
+}
+
+.btn-profile {
+    width: 100%;
+    border: none;
+    background-color: #172b4d;
+    color: #ffffff;
+    height: 50px;
+}
+
+.accont_active {
+    background-color: #28a90e;
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
+
+/*--------------------sidebar-page3------------------*/
+.sidebar {
+    width: 300px;
+    background: #172b4d;
+    color: #fff;
+    padding: 0px;
+    transition: width 2s;
+}
+
+    .sidebar:hover {
+        width: 150px;
+    }
+
+.circle-logo {
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 595px) {
+    .circle-logo {
+        height: 70px;
+        width: 70px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+}
+
+.sidebar-header {
+    padding: 60px 20px 10px 0px;
+}
+
+@media only screen and (max-width: 595px) {
+    .sidebar-header {
+        padding: 20px 10px 5px 0px;
+    }
+}
+
+.text-sidebar-header {
+    color: #dff9fb;
+    padding: 20px 0px 20px 0px;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 595px) {
+    .text-sidebar-header {
+        padding: 15px 0px 20px 0px;
+        font-size: 10px;
+    }
+}
+
+.sidebar li {
+    list-style-type: none;
+    right: 0%;
+    border-bottom: 1px solid #dff9fb;
+    border-top: .5px solid #dff9fb;
+    padding-right: 15px;
+}
+
+.image-sidebar {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 595px) {
+    .image-sidebar {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+}
+
+.sidebar a {
+    color: white;
+}
+
+@media only screen and (max-width: 595px) {
+    .sidebar a {
+        font-size: 10px;
+    }
+}
+
+.btn-sidebar {
+    border-radius: 0 100% 100% 0 / 50%;
+    height: 50px;
+    width: 30px;
+    padding: 14px 12px;
+    background-color: #ffffff;
+    position: fixed;
+    right: 222px;
+    top: 460px;
+    transition: width 2s;
+    border: none;
+}
+
+.icon-sidebar-btn {
+    color: #172b4d;
+    top: 20px;
+    width: 10px;
+    border: none;
+}
+
+
+.icon-sidebar-btn-exit {
+    top: 20px;
+    width: 10px;
+    border: none;
+}
+/*---------------------sidebar-@media------------*/
+
+
+/*---------------------page3-------------------*/
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.content {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.column-profile-img {
+    cursor: pointer;
+    user-select: none;
+    padding: 6px;
+}
+
+.img-profile-page3 {
+    width: 130px;
+    height: 130px;
+}
+
+@media only screen and (max-width: 595px) {
+    .img-profile-page3 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.txt-link-profile {
+    color: #172b4d;
+    padding-right: 18%;
+}
+
+@media only screen and (max-width: 760px) {
+    .txt-link-profile {
+        font-size: 14px;
+        padding-right: 10%;
+    }
+}
+
+.copy-profile-link {
+    width: 65%;
+    height: 65px;
+    border: 1px solid #172b4d;
+}
+
+@media only screen and (max-width: 760px) {
+    .copy-profile-link {
+        width: 90%;
+        height: 50px;
+    }
+}
+
+.btn-copy-profile {
+    background-color: #172b4d;
+    width: 80px;
+    height: 60%;
+    color: white;
+    border: none;
+    margin: 12px 0px 0px 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+    .btn-copy-profile {
+        width: 50px;
+        height: 60%;
+        margin: 12px 0px 0px 5px;
+        font-size: 15px;
+    }
+}
+
+.btn-exit-profile {
+    background-color: #172b4d;
+    color: white;
+    font-size: 15px;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    margin-left: 4%;
    
 }
-.tbl_profile td{
-    padding:20px;
+
+@media only screen and (max-width: 595px) {
+    .btn-exit-profile {
+        font-size: 13px;
+        width: 60px;
+        height: 30px;
+    }
 }
-.textbox-profile{
-    width:100%;
+/*---------------footer-profile-page3--------------*/
+.footer-profile {
+    background-color: #172b4d;
+    width: 230px;
+    height: 60px;
+    left: 0px;
 }
-.btn-profile{
-    width:100%;
-    border:none;
-    background-color:#ae0e0e;
-    color:white;
-    height:50px;
+
+.image-footer-profile-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 4%;
+    margin-top: 10px;
 }
-.accont_active{
-    background-color:#28a90e;
-    width:50px;
-    height:auto;
-    border-radius:50px;
-    color:white;
-    border:none;
+
+@media only screen and (max-width: 595px) {
+    .footer-profile {
+        width: 180px;
+        height: 50px;
+        left: 0px;
+    }
 }
+
+@media only screen and (max-width: 595px) {
+    .image-footer-profile-icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 4%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+

@@ -18,105 +18,79 @@
 <body dir="rtl">
     <header:UserControlsignup_header runat="server" ID="header" />
 
-    <form id="form1" runat="server">
+   <form id="form1" runat="server">
         <div>
-         
+
             <br />
             <br />
             <div class="row">
 
                 <div class="col-12 text-center">
                     <h4 class="text-login-seller">ثبت نام کاربر</h4>
+                    <p>در هنگام ثبت نام اگر دانشجو هستید اول پسورد خود sو اگر مدیر هستید اول پسورد خود m قرار دهید.</p>
                 </div>
 
             </div>
             <br />
             <br />
-           
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-2 ">
+                    </div>
+
+                    <div class="col-lg-4 text-center ">
+
+                        <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
+                        <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox ID="txtFamily" placeholder="نام خانوادگی" CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server"></asp:TextBox>
+                        <img src="Images/phone-call.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox ID="txtPhone" placeholder="شماره تلفن" CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server"></asp:TextBox>
+                        <img src="Images/pin.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox ID="txtAddress" placeholder="آدرس" CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" TextMode="MultiLine" runat="server"></asp:TextBox>
+
+                    </div>
+                    <div class="col-lg-4 text-center ">
+                        <img src="Images/woman.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:DropDownList ID="ddlGender" CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server">
+                            <asp:ListItem>مذکر</asp:ListItem>
+                            <asp:ListItem>مونث</asp:ListItem>
+                        </asp:DropDownList>
+
+                        <img src="Images/gmail.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox placeholder="ایمیل" CssClass="textbox_signup" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" ID="txtEmail" runat="server"></asp:TextBox>
+
+                        <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox ID="txtUsername" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" CssClass="textbox_signup" placeholder="نام کاربری" runat="server"></asp:TextBox>
+                        <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
+
+                        <img src="Images/Icons-24px-Black-Unlocked.svg" class="imag_signup" style="width: 25px; height: 25px;" />
+                        <asp:TextBox ID="txtPassword" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد" CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
 
 
-
-            <div class="row " align="center">
-                <div class="col-1 col-lg-1"></div>
-                <div class="col-10 col-lg-10 ">
-                    <table class="table_signup">
-                        <tr>
-                           
-                            <td colspan="2">
-                                <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
-                            </td>
-
-                           
-                            <td colspan="2">
-                                <img src="Images/woman.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:DropDownList ID="ddlGender" CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server">
-                                    <asp:ListItem>مذکر</asp:ListItem>
-                                    <asp:ListItem>مونث</asp:ListItem>
-                                </asp:DropDownList>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                           
-                            <td colspan="2">
-                                <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox ID="txtFamily" placeholder="نام خانوادگی" CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server"></asp:TextBox>
-                            </td>
-                           
-                            <td colspan="2">
-                               <img src="Images/gmail.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox placeholder="ایمیل" CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" ID="txtEmail" runat="server"></asp:TextBox>
-                            </td>
-                        </tr>
-                        <tr>
-                           
-                            <td colspan="2">
-                                
-                                <img src="Images/phone-call.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox ID="txtPhone" placeholder="شماره تلفن" CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" runat="server"></asp:TextBox>
-                            </td>
-                           
-                            <td colspan="2">
-                                <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox ID="txtUsername" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" CssClass="textbox_signup" placeholder="نام کاربری" runat="server"></asp:TextBox>
-                                <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
-                            </td>
-                        </tr>
-
-                        <tr>
-                           
-                            <td colspan="2">
-                                <img src="Images/pin.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox ID="txtAddress" placeholder="آدرس" CssClass="textbox_signup" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" TextMode="MultiLine" runat="server"></asp:TextBox>
-                            </td>
-
-                            
-                            <td colspan="2">
-                                <img src="Images/Icons-24px-Black-Unlocked.svg" class="imag_signup" width="45px" height="45px" />
-                                <asp:TextBox ID="txtPassword" Style="width: 350px; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد" CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
-                                <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
-                            </td>
-                        </tr>
-                        
-
-                        <tr align="center">
-                         
-                            <td colspan="3">
-                                <asp:Button ID="btnSubmit" class="btn_signup" runat="server" Text="ثبت نام" OnClick="btnSubmit_Click" />
-                            </td>
-                        </tr>
-
-                    </table>
-
-                    <div class="col-1 col-lg-1"></div>
+                    </div>
+                    <div class="col-lg-2  ">
+                    </div>
                 </div>
+
+
+
+                <div class="row ">
+                    <div class=" col-lg-2 ">
+                    </div>
+
+                    <div class=" col-lg-8 ">
+                        <asp:Button ID="btnSubmit" class="btn_signup" runat="server" Text="ثبت نام" OnClick="btnSubmit_Click" />
+                    </div>
+                    <div class=" col-lg-2 ">
+                    </div>
+                </div>
+
+
             </div>
-
-
         </div>
     </form>
-
 </body>
 </html>

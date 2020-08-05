@@ -13,7 +13,7 @@ namespace DigiService.DAL
         public CenteralLab Load(int id)
         {
             // 1.make new connection
-            SqlConnection sqlConnection = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = true");
+            SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog = DigiService;Integrated Security = true");
 
 
             //make a command
