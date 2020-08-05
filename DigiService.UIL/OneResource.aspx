@@ -196,15 +196,18 @@
                                                 <% for(int h = 7; h <=16; h++){ %>
                                                     <% if (TimeStartHour <= h && TimeFinishHour >= h)
                                                              {  %>
+                                                
                                                         <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                           
+                                                          <asp:Button  runat="server" ID="btn1_Add" OnClick="Btn1_Add"/>
                                                         </td>
+                                                          
                                                         <%} %>
+
                                                         <% else
                                                              { %>
                                                             <td style="border : 1px solid;border-color : #ecf0f1;width : 9%;height : 25px;float :right;color : black;font-weight :bold;color:black;background-color : #636e72">
-                                                            
-                                                        </td>
+                                                          
+                                                            </td>
                                                             <%} %>
                                                 
                                                 <% } %>
