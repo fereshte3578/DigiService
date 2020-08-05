@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DigiService.UIL {
-    
-    
-    public partial class index {
-        
+namespace DigiService.UIL
+{
+
+
+    public partial class index
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace DigiService.UIL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// header control.
         /// </summary>
@@ -29,7 +31,25 @@ namespace DigiService.UIL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DigiService.UIL.UserControls.UserControl_Header header;
-        
+
+        /// <summary>
+        /// BodySlider control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DigiService.UIL.UserControls.BodySlider BodySlider;
+
+        /// <summary>
+        /// Central control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DigiService.UIL.UserControls.CenteralLabWebForm2 Central;
+
         /// <summary>
         /// UserControl_Footer control.
         /// </summary>
@@ -37,6 +57,6 @@ namespace DigiService.UIL {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UserControl UserControl_Footer;
+        protected global::DigiService.UIL.UserControls.UserControl_Footer UserControl_Footer;
     }
 }

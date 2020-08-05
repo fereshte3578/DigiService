@@ -74,6 +74,7 @@
                     </div>
             <table style="width : 80%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
                     <tr style="direction :rtl ">
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">کد درخواست  </td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">نام دستگاه </td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">زمان دستگاه</td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 3%;border-color : #130f40;">نام درخواست دهنده</td>
@@ -91,8 +92,10 @@
 
             <% if (HeadNameId == ResourceId)
                      { %>
+                <asp:HiddenField runat="server" ID="UserID_Request" />
             <% for (int a = 0; a <= 3; a++)
                 { %>
+                
             <% int IdRequest = requests[a].id; %>
             <% int resourceId = requests[a].ResourceId; %>
             <% int UserId = requests[a].UserId; %>
@@ -103,6 +106,8 @@
                 
                 <% if ( IdResource == resourceId ) {%>
            <tr style="direction :rtl ">
+               
+                        <td  style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = IdRequest %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = NameDivice %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = PresentHour %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% =UserId %></td>
@@ -111,7 +116,7 @@
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> 
                             <% if (STATUS == 0)
                                {%>
-                            <asp:Button runat="server" ID="Button_receptionUpdat" OnClick="Button_reception" Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White"></asp:Button>
+                            <asp:Button runat="server" ID="Button_receptionUpdat"  Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White"></asp:Button>
                             <%} %>
                             <% if (STATUS == 1)
                                 { %>

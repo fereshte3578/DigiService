@@ -24,6 +24,15 @@ namespace DigiService.UIL
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// UserID_Request control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField UserID_Request;
+
+        /// <summary>
         /// Button_receptionUpdat control.
         /// </summary>
         /// <remarks>

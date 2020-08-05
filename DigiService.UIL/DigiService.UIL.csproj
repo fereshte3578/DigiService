@@ -100,7 +100,9 @@
     <Content Include="ShowTwoParts.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Styles\Style.css" />
+    <Content Include="UserControls\BodySlider.ascx" />
     <Content Include="UserControls\CenteralLabWebForm2.ascx" />
+    <Content Include="UserControls\linknavbar.ascx" />
     <Content Include="UserControls\UserControlsignup_header.ascx" />
     <Content Include="UserControls\UserControl_Footer.ascx" />
     <Content Include="UserControls\UserControl_Header.ascx" />
@@ -179,12 +181,26 @@
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\BodySlider.ascx.cs">
+      <DependentUpon>BodySlider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BodySlider.ascx.designer.cs">
+      <DependentUpon>BodySlider.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CenteralLabWebForm2.ascx.cs">
       <DependentUpon>CenteralLabWebForm2.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\CenteralLabWebForm2.ascx.designer.cs">
       <DependentUpon>CenteralLabWebForm2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\linknavbar.ascx.cs">
+      <DependentUpon>linknavbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\linknavbar.ascx.designer.cs">
+      <DependentUpon>linknavbar.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserControlsignup_header.ascx.cs">
       <DependentUpon>UserControlsignup_header.ascx</DependentUpon>

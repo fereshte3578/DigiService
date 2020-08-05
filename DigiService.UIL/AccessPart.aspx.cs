@@ -24,7 +24,8 @@ namespace DigiService.UIL
 
             RequestManager requestManager = new RequestManager();
             requests = requestManager.SelectRequests();
-
         }
+
+
     }
 }
