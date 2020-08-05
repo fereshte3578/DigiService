@@ -75,7 +75,7 @@ namespace DigiService.UIL
         protected void btn_exit_profile(object sender, EventArgs e)
         {
             Session["Name"] = txtName.Text;
-
+            Session["id"] = hfUserID_prof.Value;
             Response.Redirect("index.aspx");
 
         }
