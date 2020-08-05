@@ -72,9 +72,6 @@ namespace DigiService.UIL
 
 
         }
-<<<<<<< HEAD
-
-=======
         protected void btn_exit_profile(object sender, EventArgs e)
         {
             Session["Name"] = txtName.Text;
@@ -82,6 +79,6 @@ namespace DigiService.UIL
             Response.Redirect("index.aspx");
 
         }
->>>>>>> 9544fe084d93f7f191b15f3883bf24bbf24b444e
+
     }
 }
