@@ -4,13 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-            <meta charset="UTF-8">
+
+      <meta charset="UTF-8">
          <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style3.css">
+    <script src="jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 <style>
 .dot {
   height: 8px;
@@ -70,7 +81,7 @@
                     <button type="button" style="background-color :#eb4d4b;color:white;border-radius : 90px;border :none;padding-top:1%;font-size :15px;" class="btn" data-toggle="modal" data-target="#myHead" > مسؤل:<% = FullName %></button>
                 </div>
             </div>
-               <div class="modal fade" id="myHead" role="dialog" style="padding-top : 5%;">
+               <div class="modal fade" id="myHead" role="dialog" style="padding-top : 13%;">
                            <div class="modal-dialog modal-md">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -78,7 +89,12 @@
                                     </div>
                                     <div class="modal-body" dir="rtl" >
 
-                                        <table style="width : 100%;">
+                                        <table style="width : 100%;border  :dashed 1px solid; ">
+                                            <tr>
+                                                <td >
+                                                   <img style="padding : 1px ; border : solid;border-color : #bdc3c7;width:30%;height : 40%;" class="mySlides w3-animate-fading" src="Images\2019917-105721-scan0010.jpg" /> 
+                                                </td>
+                                            </tr>
                                             <tr style="background-color : #d2dae2;">
                                                 <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
                                                     نام و نام خانوادگی :
@@ -113,20 +129,20 @@
                        </div>
             <hr />
                <div class="row" dir="rtl">
-                   <div class="col-12 col-sm-4 col-md-4 col-xl-4">
-                       <p>place image</p>
+                   <div class="col-12 col-sm-5 col-md-5 col-xl-5" dir="rtl">
+                       <img src="Images\1-29-R2124168.png " style="width:65%;height : 85%; float : right;"  />
                    </div>
-                   <div class="col-12 col-sm-8 col-md-8 col-xl-8">
+                   <div class="col-12 col-sm-7 col-md-7 col-xl-7">
                        <div class="row" dir="rtl" >
-                               <p style="color:black ; font-size : 15px;" dir="rtl"> <% = NameDivice %></p>
+                           <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                               <p style="float:right;color:black ; font-size : 15px;" dir="rtl"> <% = NameDivice %></p>
+                            </div>
                        </div>
                        <hr />
                        <div class="row" dir="rtl">
-                           <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                               <p style="font-size : 15px;color :darkslategrey;">دسته بندی : </p>
-                           </div>
-                           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-12" style="padding-right :0px;">
-                               <a href="ShowTwoParts.aspx"><p style="color:darkslategrey ; font-size : 15px; padding-right :0px;" dir="rtl"> آزمایشگاه خواص مکانیکی _ گروه مهندسی مواد </p></a>
+                           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                               <p style="float:right;font-size : 15px;color :darkslategrey;">دسته بندی : </p>
+                               <a href="ShowTwoParts.aspx" style="float:right;"><p style="color:darkslategrey ; font-size : 15px; padding-right :0px;" dir="rtl"> آزمایشگاه خواص مکانیکی _ گروه مهندسی مواد </p></a>
                            </div>
                            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
 
@@ -137,7 +153,7 @@
                        </div>
                        
                        <div class="modal fade" id="myTime" role="dialog" style="padding-top : 8%;">
-                           <div class="modal-dialog modal-md">
+                           <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -146,9 +162,22 @@
                                         <div class="row">
                                             <p style="color : black;font-weight:bolder;float:right;padding-right : 3%">روزهای فعال بودن این دستگاه : </p>
                                         </div>
-                                        <div class="row">
-                                            <p style="padding-right : 3%;color : #ff5252;font-weight :bold;float:right;"> <% = PresentHour %> </p>
-                                        </div>
+                                        <table style="width : 100%;border  : 1px solid;border-color : #ecf0f1;">
+                                            <tr style="border : 1px solid;border-color : #ecf0f1;">
+                                                <td style="width:9%;font-size:10px;float :right;color : black;margin-left : 1% ">
+                                                    روز/ساعت
+                                                </td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">7</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">8</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">9</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">10</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">11</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">12</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">13</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">14</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">15</td>
+                                                <td style="padding-left : 3%;border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;">16</td>
+                                            </tr>
                                         <% for (int t = 0; t < 12; t++)
                                         { %>
 
@@ -157,24 +186,46 @@
                                         <% if (TimeIdRESOURCE == IdR)
                                         { %>
                                         <% string TimeWichday = timeReSources[t].wichday; %>
-                                        <% string TimeStartHour = timeReSources[t].StartHour;%>
-                                        <% string TimeFinishHour = timeReSources[t].FinishHour; %>
-                                        <div class="row">
-                                             <p style="color : black;font-weight:bolder;float:right;padding-right : 3%"> <% = TimeWichday %> <% = TimeStartHour %> تا  <% = TimeFinishHour %> </p>
-                                        </div>
+                                        <% int TimeStartHour = int.Parse(timeReSources[t].StartHour);%>
+                                        <% int TimeFinishHour =int.Parse( timeReSources[t].FinishHour); %>
+                                            <tr style="border : 1px solid;border-color : #ecf0f1;">
+                                                <td style="width:9%;font-size:15px;font-weight : bold;float :right;color : black ;padding-left :3%;margin-left : 1% ">
+                                                    <% = TimeWichday %>
+                                                </td>
+
+                                                <% for(int h = 7; h <=16; h++){ %>
+                                                    <% if (TimeStartHour <= h && TimeFinishHour >= h)
+                                                             {  %>
+                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
+                                                           
+                                                        </td>
+                                                        <%} %>
+                                                        <% else
+                                                             { %>
+                                                            <td style="border : 1px solid;border-color : #ecf0f1;width : 9%;height : 25px;float :right;color : black;font-weight :bold;color:black;background-color : #636e72">
+                                                            
+                                                        </td>
+                                                            <%} %>
+                                                
+                                                <% } %>
+                                            </tr>
+
                                         <%} %>
 
                                         <%} %>
-                                       
+                                       </table>
+
                                     </div>
 
                                  </div>
                             </div>
                        </div>
-                           <br />
+                        <br />
                        <br />
                           <div class="row" dir="rtl">
-                                  <p style="font-size : 15px;color :darkslategrey;"> ویژگی ها :  </p>
+                              <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                  <p style="float: right;font-size : 15px;color :darkslategrey;"> ویژگی ها :  </p>
+                               </div>
                           </div>
                                
                          <div class="row" dir="rtl">
@@ -183,11 +234,13 @@
                        <br />
                        <br />
                        <div class="row" dir="rtl">
-                                  <p style="padding-right : 10%;padding-top : 2%;font-size : 15px;color :darkslategrey;">   هزینه ها :  </p>
+                           <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                <p style="float : right;padding-right : 10%;padding-top : 2%;font-size : 15px;color :darkslategrey;">   هزینه ها :  </p>
+                            </div>
                        </div>
                        <br />
-                       <div class="row" dir="rtl" style="padding-right : 5%;">
-                           <table style="width : 90%;">
+                       <div class="row" dir="rtl" style="padding-right : 0%;">
+                           <table style="width : 90%;border:solid;border-color : #95a5a6;">
                                             <tr style="background-color : #d2dae2;">
                                                 <td style="width : 30%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
                                                     عنوان
