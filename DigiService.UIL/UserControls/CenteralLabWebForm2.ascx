@@ -27,7 +27,7 @@
                 </div>
             </div>
         <div class="row" dir="rtl">
-
+            <asp:HiddenField ID="HiddenField1" runat="server" />
             <%if (!IsPostBack)
                 {%>
             <%for (int s = 0; s < 3; s++)
@@ -57,7 +57,10 @@
                            <%if (ID == AreaId)
                            { %>
                              <% string n = MultyResoure[m].NameDivice; %>
-                            <a href="../OneResource.aspx?IDRESOUTCE=<% = Id %>" ><p style="color :#22a6b3;padding-right : 2%;font-weight : bold;"><% =n %></p></a>
+
+                            <a href="../OneResource.aspx?IDRESOUTCE=<% = Id %>" >
+                                <p style="color :#22a6b3;padding-right : 2%;font-weight : bold;"><% =n %></p>
+                            </a>
 
                            <%} %>
 

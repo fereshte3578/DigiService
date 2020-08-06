@@ -101,11 +101,14 @@ namespace DigiService.UIL
 
             Response.Redirect("Profile.aspx");
 <<<<<<< HEAD
+<<<<<<< HEAD
            
 =======
 >>>>>>> c548cd86537e0c5d751ae1b76bd8877f8ff7354e
             
 >>>>>>> 6b1b045cf3da5ec688de0b95c54fb195fb5fac5a
+=======
+>>>>>>> a242b6dbc457361c356a32845710a3e09dc0b18a
         }
     }
 }

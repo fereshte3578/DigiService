@@ -24,6 +24,15 @@ namespace DigiService.UIL
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// HiddenField1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
+
+        /// <summary>
         /// HiddenFieldIdResource control.
         /// </summary>
         /// <remarks>
@@ -33,12 +42,12 @@ namespace DigiService.UIL
         protected global::System.Web.UI.WebControls.HiddenField HiddenFieldIdResource;
 
         /// <summary>
-        /// btn1_Add control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn1_Add;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
