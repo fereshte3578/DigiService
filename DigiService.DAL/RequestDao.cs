@@ -70,6 +70,20 @@ namespace DigiService.DAL
             return requests;
         }
 
+        public void saveData(string q)
+        {
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand(q, con);
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+        }
+
         public bool Update0(Requests requests)
         {
             SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");

@@ -69,7 +69,7 @@ namespace DigiService.DAL.userlogindao
 
         public UserLoginEntities loginuser1(string p1, string p2)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
 
            
             SqlCommand com = new SqlCommand("select id, Email , Password from  HeadNameLaB  where Email='" + p1 + "' and Password ='" + p2 + "'", con);
@@ -109,7 +109,7 @@ namespace DigiService.DAL.userlogindao
 
         public UserLoginEntities loginuser2(string p1, string p2)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
 
 
             SqlCommand com = new SqlCommand("select id, Email , Password from  LabManage  where Email='" + p1 + "' and Password ='" + p2 + "'", con);

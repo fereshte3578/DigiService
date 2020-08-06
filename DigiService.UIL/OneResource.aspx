@@ -204,15 +204,13 @@
                                                              {  %>
                                                
                                                     <% string hour = h.ToString() ; %>
-                                                <% if (TimeWichday == "شنبه")
-                                                    { %>
-                                                    <% string idbtnadd = TimeWichday+ " "+hour; %>
+                                                    <% string idbtnadd = TimeWichday+ ' '+hour+' '+ IdR; %>
                                                 
                                                         <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                          <a href="request.aspx?idr = <% =idbtnadd  %>"> k</a>
+                                                          <a href="request.aspx?idr = <% =idbtnadd  %>">مجاز</a>
                                                             
                                                         </td>
-                                                <% } %>
+                                                <
                                                         <%} %>
 
                                                         <% else

@@ -24,6 +24,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:HiddenField ID="HiddenField1" runat="server" />
+        <% int idHeadname =int.Parse( HiddenField1.Value); %>
+        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         <div>
             <div class="container-fluid" dir="rtl">
             <% for (int i = 0; i < 3; i++)
@@ -35,7 +38,7 @@
             <% string Fullname = headNameResources[i].Fullname; %>
             <% string TellPhone = headNameResources[i].TellePhone; %>
       
-            <% if (ResourceId == 2)
+            <% if (ResourceId == idHeadname)
                      {%>
                 <div class="row" style="padding-bottom : 5%;padding-top : 0%;padding-right : 2%;padding-left : 2%;" dir="rtl">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6" dir="rtl">
@@ -117,7 +120,12 @@
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> 
                             <% if (STATUS == 0)
                                {%>
-                            <asp:Button runat="server" ID="Button_receptionUpdat"  OnClick="Update0"  Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White"></asp:Button>
+                           
+                            <a href="AccessPart.aspx?idreq=<% = IdRequest %>" style="color : #33d9b2; border : none ;" > oh</a>
+                          
+                            <asp:Button runat="server" ID="Button_receptionUpdat"  OnClick="Update0"  Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White">
+                                
+                            </asp:Button>
                             <%} %>
                             <% if (STATUS == 1)
                                 { %>

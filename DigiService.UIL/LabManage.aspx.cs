@@ -33,6 +33,16 @@ namespace DigiService.UIL
             RequestManager requestManager = new RequestManager();
             requests = requestManager.SelectRequests();
 
+            if (Request.Cookies["ACookies"] != null)
+            {
+                HiddenField1.Value = Request.Cookies["Cookies5"]["id"];
+
+            }
+            else
+            {
+                string msg = "No Cookies";
+                Label1.Text = msg;
+            }
 
         }
     }

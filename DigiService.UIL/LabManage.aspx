@@ -24,6 +24,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:HiddenField ID="HiddenField1" runat="server" />
+        <% int IdArea = int.Parse( HiddenField1.Value) ; %>
+        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         <div style="padding : 2%;" dir="rtl">
             <% for (int a = 0; a <= 2; a++)
                 { %>
@@ -33,7 +36,7 @@
             <% string IsActiveed = areas[a].IsActiveed; %>
             <% int CollegId = areas[a].CollegId; %>
 
-            <% if (idArea == 1)
+            <% if (idArea == IdArea)
             {%>
 
             <table style="width : 80%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);" dir="rtl">

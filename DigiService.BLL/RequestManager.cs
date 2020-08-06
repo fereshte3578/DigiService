@@ -21,5 +21,13 @@ namespace DigiService.BLL
             RequestDao requestDao = new RequestDao();
             return requestDao.Update0(requests);
         }
+
+
+        public void AddData(string day, int idResorce, string starthour, string finalfinish)
+        {
+            RequestDao ob = new RequestDao();
+            string Q = "INSERT INTO UserRegistration VALUES ('" + idResorce + "','" + 1 + "',N'" + day + "',N'" + starthour + "',N'" + finalfinish + "','" + 0 + " ') ";
+            ob.saveData(Q);
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace DigiService.UIL
 
             UserLoginManager userLoginManager = new UserLoginManager();
             UserLoginEntities user = userLoginManager.loginuser(txtuname.Text, txtpassword.Text);
-<<<<<<< HEAD
+
             if(user != null)
             {
                 hfUserID.Value = user.id.ToString();
@@ -79,36 +79,7 @@ namespace DigiService.UIL
                 Response.Write("<script>alert('اطلاعات شما صحیح نیست');</script>");
             }
            
-=======
-            hfUserID.Value = user.id.ToString();
-            namehide.Value = user.Name.ToString();
-            familyhide.Value = user.Family.ToString();
-            phonehide.Value = user.Phone.ToString();
-            emailhise.Value = user.Email.ToString();
-            addresshide.Value = user.Address.ToString();
-            genderhide.Value = user.Gender.ToString();
-            Response.Cookies["Cookies3"]["id"] = hfUserID.Value;
-            Response.Cookies["Cookies3"]["name"] = namehide.Value;
-            Response.Cookies["Cookies3"]["family"] = familyhide.Value;
-            Response.Cookies["Cookies3"]["phone"] = phonehide.Value;
-            Response.Cookies["Cookies3"]["email"] = emailhise.Value;
-            Response.Cookies["Cookies3"]["address"] = addresshide.Value;
-            Response.Cookies["Cookies3"]["gender"] = genderhide.Value;
-            Response.Cookies["Cookies3"]["username"] = txtuname.Text;
-            Response.Cookies["Cookies3"]["password"] = txtpassword.Text;
 
-            Response.Cookies["StudentCookies"].Expires = DateTime.Now.AddDays(1);
-
-            Response.Redirect("Profile.aspx");
-<<<<<<< HEAD
-<<<<<<< HEAD
-           
-=======
->>>>>>> c548cd86537e0c5d751ae1b76bd8877f8ff7354e
-            
->>>>>>> 6b1b045cf3da5ec688de0b95c54fb195fb5fac5a
-=======
->>>>>>> a242b6dbc457361c356a32845710a3e09dc0b18a
         }
     }
 }
