@@ -20,5 +20,17 @@ namespace DigiService.BLL.Userloginmanager
         }
 
 
+
+        public UserLoginEntities loginuser1(string p1, string p2)
+        {
+            UserLoginDao userLoginDao1 = new UserLoginDao();
+            return userLoginDao1.loginuser1(p1, p2);
+        }
+
+        public UserLoginEntities loginuser2(string p1, string p2)
+        {
+            UserLoginDao userLoginDao2 = new UserLoginDao();
+            return userLoginDao2.loginuser2(p1, p2);
+        }
     }
 }

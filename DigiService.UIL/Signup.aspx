@@ -27,7 +27,7 @@
 
                 <div class="col-12 text-center">
                     <h4 class="text-login-seller">ثبت نام کاربر</h4>
-                    <p>در هنگام ثبت نام اول پسورد خود </p>
+                   
                 </div>
 
             </div>
@@ -66,7 +66,7 @@
                         <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
 
                         <img src="Images/Icons-24px-Black-Unlocked.svg" class="imag_signup" style="width: 25px; height: 25px;" />
-                        <asp:TextBox ID="txtPassword" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد" CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد را با sشروع کنید..." CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
                         <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
 
 

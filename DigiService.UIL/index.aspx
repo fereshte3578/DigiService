@@ -27,7 +27,7 @@
         <Header:UserControl_Header runat="server" id="header"/>
         <fereshte:linknavbar runat="server" />
         <bodys:BodySlider runat="server" ID="BodySlider" />
-       <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+       
               <fereshte:CenteralLabWebForm2 runat="server" ID="Central" />
         
         <footer:UserControl_Footer runat="server" id="UserControl_Footer"/>

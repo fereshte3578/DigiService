@@ -123,7 +123,7 @@
                                                     <asp:TextBox placeholder="نام کاربری" class="textbox-profile" ID="TextBox2" runat="server"></asp:TextBox></td>
                                                 <td>
                                                     <asp:Label ID="Label7" runat="server" Text="پسورد:"></asp:Label>
-                                                    <asp:TextBox placeholder="پسورد" class="textbox-profile" ID="TextBox3" TextMode="Password" runat="server"></asp:TextBox>
+                                                    <asp:TextBox placeholder="پسورد" class="textbox-profile" ID="TextBox3"  runat="server"></asp:TextBox>
 
                                                 </td>
                                             </tr>

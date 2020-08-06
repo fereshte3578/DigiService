@@ -18,7 +18,8 @@
 
             <div class="col-lg-4 col-sm-12" style="float: left; padding-left: 2%; margin-top: 10px">
 
-           
+
+                 <asp:Label ID="Label1" Style="background-color:#ffffff ; color:#111892; border-radius:5px ; height:30px" runat="server" Text=""></asp:Label>
                 <asp:HyperLink ID="HyperLinkHome" CssClass="btn1"  runat="server"   text="ورود"   NavigateUrl = "/Login.aspx" ></asp:HyperLink>
                 <asp:HyperLink ID="HyperLink1" CssClass="btn1"  runat="server"   text="ثبت نام"   NavigateUrl = "/Signup.aspx" />
              

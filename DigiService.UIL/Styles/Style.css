@@ -48,7 +48,7 @@
 .footer {
     width: 100%;
     height: 400px;
-    background: url('https://negativespace.co/wp-content/uploads/2020/06/negative-space-abstract-turbulent-sphere-1.jpg');
+    background-image: url(/Images/negative-space-abstract-turbulent-sphere-1.jpg);
     clip: rect(0px, 60px, 300px, 5px);
     background-position: center;
     background-size: cover;
