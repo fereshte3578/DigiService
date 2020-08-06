@@ -11,6 +11,10 @@ namespace DigiService.UIL.UserControls
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            if (Session["Name"] != null)
+            {
+                Label1.Text = "سلام" + " " + Session["Name"].ToString() + "!";
+            } 
 
 		}
 	}

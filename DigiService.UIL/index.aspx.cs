@@ -11,10 +11,7 @@ namespace DigiService.UIL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Name"] != null)
-            {
-                Label1.Text = Session["Name"].ToString();
-            } 
+           
 
         }
     }
