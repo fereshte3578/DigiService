@@ -18,7 +18,8 @@ namespace DigiService.DAL.userlogindao
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
 
-            SqlCommand com = new SqlCommand("select * from UserRegistration where Username='" + username + "' and Password ='" + password + "'", con);
+            SqlCommand com = new SqlCommand("select * from UserRegistration  where Username='" + username + "' and Password ='" + password + "'", con);
+           
             SqlParameter lanquageParameter = com.Parameters.Add("@username", System.Data.SqlDbType.NVarChar);
             lanquageParameter.Value = username;
             SqlParameter lanquageParameter1 = com.Parameters.Add("@password", System.Data.SqlDbType.NVarChar);
@@ -61,9 +62,89 @@ namespace DigiService.DAL.userlogindao
                 return null;
             }
             return tmpuser;
+        }
+    
 
+
+
+        public UserLoginEntities loginuser1(string p1, string p2)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+
+           
+            SqlCommand com = new SqlCommand("select id, Email , Password from  HeadNameLaB  where Email='" + p1 + "' and Password ='" + p2 + "'", con);
+            
+            SqlParameter lanquageParameter = com.Parameters.Add("@p1", System.Data.SqlDbType.NVarChar);
+            lanquageParameter.Value = p1;
+            SqlParameter lanquageParameter1 = com.Parameters.Add("@p2", System.Data.SqlDbType.NVarChar);
+            lanquageParameter1.Value = p2;
+
+            UserLoginEntities tmpuser = null;
+            try
+            {
+                con.Open();
+                //3. Read Data
+                SqlDataReader sqlDataReader = com.ExecuteReader();
+                while (sqlDataReader.Read())
+                {
+                    tmpuser = new UserLoginEntities();
+
+                    tmpuser.id = sqlDataReader.GetInt32(0);
+                    if (sqlDataReader.IsDBNull(1) == false)
+                        tmpuser.Email= sqlDataReader.GetString(1);
+                    if (sqlDataReader.IsDBNull(2) == false)
+                        tmpuser.Password = sqlDataReader.GetString(2);
+
+
+                }
+                con.Close();
+            }
+            catch (SqlException sqlException)
+            {
+                con.Close();
+                return null;
+            }
+            return tmpuser;
         }
 
+        public UserLoginEntities loginuser2(string p1, string p2)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
 
+
+            SqlCommand com = new SqlCommand("select id, Email , Password from  LabManage  where Email='" + p1 + "' and Password ='" + p2 + "'", con);
+
+            SqlParameter lanquageParameter = com.Parameters.Add("@p1", System.Data.SqlDbType.NVarChar);
+            lanquageParameter.Value = p1;
+            SqlParameter lanquageParameter1 = com.Parameters.Add("@p2", System.Data.SqlDbType.NVarChar);
+            lanquageParameter1.Value = p2;
+
+            UserLoginEntities tmpuser = null;
+            try
+            {
+                con.Open();
+                //3. Read Data
+                SqlDataReader sqlDataReader = com.ExecuteReader();
+                while (sqlDataReader.Read())
+                {
+                    tmpuser = new UserLoginEntities();
+
+                    tmpuser.id = sqlDataReader.GetInt32(0);
+                    if (sqlDataReader.IsDBNull(1) == false)
+                        tmpuser.Email = sqlDataReader.GetString(1);
+                    if (sqlDataReader.IsDBNull(2) == false)
+                        tmpuser.Password = sqlDataReader.GetString(2);
+
+
+                }
+                con.Close();
+            }
+            catch (SqlException sqlException)
+            {
+                con.Close();
+                return null;
+            }
+            return tmpuser;
+        }
     }
 }
