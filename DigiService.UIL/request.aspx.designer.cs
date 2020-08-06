@@ -11,7 +11,7 @@ namespace DigiService.UIL
 {
 
 
-    public partial class OneResource
+    public partial class request
     {
 
         /// <summary>
@@ -24,21 +24,12 @@ namespace DigiService.UIL
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// HiddenField1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
-
-        /// <summary>
-        /// HiddenFieldIdResource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenFieldIdResource;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

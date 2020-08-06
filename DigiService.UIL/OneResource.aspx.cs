@@ -33,19 +33,6 @@ namespace DigiService.UIL
             HiddenFieldIdResource.Value = IdRes;
 
         }
-        protected void Btn1_Add(object sender, EventArgs e)
-        {
-            if (Request.Cookies["StudentCookies"] == null)
-            {
-                Response.Redirect("Login.aspx");
-            
-            }
-            else
-            {
-                HiddenField1.Value = Request.Cookies["Cookies3"]["id"];
-            }
-
-        }
     }
     
 

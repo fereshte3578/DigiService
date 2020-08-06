@@ -97,6 +97,7 @@
     <Content Include="Login.aspx" />
     <Content Include="OneResource.aspx" />
     <Content Include="Profile.aspx" />
+    <Content Include="request.aspx" />
     <Content Include="ShowTwoParts.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Styles\Style.css" />
@@ -167,6 +168,13 @@
       <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="request.aspx.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="request.aspx.designer.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShowTwoParts.aspx.cs">
       <DependentUpon>ShowTwoParts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

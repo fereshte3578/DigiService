@@ -202,10 +202,17 @@
                                                 <% for(int h = 7; h <=16; h++){ %>
                                                     <% if (TimeStartHour <= h && TimeFinishHour >= h)
                                                              {  %>
+                                               
+                                                    <% string hour = h.ToString() ; %>
+                                                <% if (TimeWichday == "شنبه")
+                                                    { %>
+                                                    <% string idbtnadd = TimeWichday+ " "+hour; %>
                                                 
                                                         <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                          <asp:Button  runat="server" ID="Button1" OnClick="Btn1_Add" CssClass="size" />
+                                                          <a href="request.aspx?idr = <% =idbtnadd  %>"> k</a>
+                                                            
                                                         </td>
+                                                <% } %>
                                                         <%} %>
 
                                                         <% else
