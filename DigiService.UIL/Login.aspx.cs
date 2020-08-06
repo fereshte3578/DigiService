@@ -43,7 +43,11 @@ namespace DigiService.UIL
             Response.Cookies["StudentCookies"].Expires = DateTime.Now.AddDays(1);
 
             Response.Redirect("Profile.aspx");
+<<<<<<< HEAD
            
+=======
+            
+>>>>>>> 6b1b045cf3da5ec688de0b95c54fb195fb5fac5a
         }
     }
 }

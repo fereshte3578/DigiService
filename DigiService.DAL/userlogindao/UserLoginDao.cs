@@ -18,7 +18,7 @@ namespace DigiService.DAL.userlogindao
         {
             SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
 
-            SqlCommand com = new SqlCommand("select * from UserRegistration where Username='" + username + "' and Password = '" + password + "'", con);
+            SqlCommand com = new SqlCommand("select * from UserRegistration where Username='" + username + "' and Password ='" + password + "'", con);
             SqlParameter lanquageParameter = com.Parameters.Add("@username", System.Data.SqlDbType.NVarChar);
             lanquageParameter.Value = username;
             SqlParameter lanquageParameter1 = com.Parameters.Add("@password", System.Data.SqlDbType.NVarChar);
