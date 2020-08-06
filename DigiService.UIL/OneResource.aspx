@@ -30,11 +30,16 @@
   border-radius: 50%;
   display: inline-block;
 }
+.size{
+   width : 100%;
+   border-radius : 0px;
+   border : none;
+}
 </style>
 </head>
 <body>
     <form id="form1" runat="server">
-
+        <asp:HiddenField ID="HiddenField1" runat="server" />
         <div>
            <div class="container-fluid" dir="rtl">
         
@@ -189,6 +194,7 @@
                                         <% int TimeStartHour = int.Parse(timeReSources[t].StartHour);%>
                                         <% int TimeFinishHour =int.Parse( timeReSources[t].FinishHour); %>
                                             <tr style="border : 1px solid;border-color : #ecf0f1;">
+                                                
                                                 <td style="width:9%;font-size:15px;font-weight : bold;float :right;color : black ;padding-left :3%;margin-left : 1% ">
                                                     <% = TimeWichday %>
                                                 </td>
@@ -198,9 +204,8 @@
                                                              {  %>
                                                 
                                                         <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                          <asp:Button  runat="server" ID="btn1_Add" OnClick="Btn1_Add"/>
+                                                          <asp:Button  runat="server" ID="Button1" OnClick="Btn1_Add" CssClass="size" />
                                                         </td>
-                                                          
                                                         <%} %>
 
                                                         <% else
@@ -225,6 +230,7 @@
                        </div>
                         <br />
                        <br />
+
                           <div class="row" dir="rtl">
                               <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                                   <p style="float: right;font-size : 15px;color :darkslategrey;"> ویژگی ها :  </p>

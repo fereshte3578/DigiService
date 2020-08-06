@@ -20,6 +20,7 @@ namespace DigiService.UIL.UserControls
 
             ReSourceManager reSourceManager = new ReSourceManager();
             MultyResoure = reSourceManager.SelectMultySelect();
+           
         }
     }
 }
