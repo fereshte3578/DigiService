@@ -15,7 +15,7 @@ namespace DigiService.DAL.userdao
         public void saveData(string query)
         {
 
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
             if (con.State == ConnectionState.Closed)
             {
                 con.Open();

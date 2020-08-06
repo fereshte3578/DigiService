@@ -16,7 +16,7 @@ namespace DigiService.DAL.userlogindao
 
         public UserLoginEntities loginuser(string username, string password)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
 
             SqlCommand com = new SqlCommand("select * from UserRegistration  where Username='" + username + "' and Password ='" + password + "'", con);
            
