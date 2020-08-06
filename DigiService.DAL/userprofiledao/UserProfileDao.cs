@@ -13,7 +13,7 @@ namespace DigiService.DAL.userprofiledao
     {
         public bool Update_prof(UserProfileEntities userprof)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-14HI1CV\\SSSQL;Initial Catalog=DigiService;Integrated Security = true");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
             SqlCommand com = con.CreateCommand();
             com.CommandType = CommandType.StoredProcedure;
             com.CommandText = "userprofile_update";
