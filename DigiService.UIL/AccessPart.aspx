@@ -1,34 +1,48 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AccessPart.aspx.cs" Inherits="DigiService.UIL.AccessPart" %>
-
+<%@ Register Src="~/UserControls/UserControl_Header.ascx" TagPrefix="Header" TagName="UserControl_Header" %>
+<%@ Register Src="~/UserControls/UserControl_Footer.ascx" TagPrefix="footer" TagName="UserControl_Footer" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <meta charset="UTF-8">
-         <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-    </script>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="style3.css">
-    <script src="jQuery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styles/bootstrap.css" />
+    <link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="stylesheet" href="Scripts/jquery-3.4.1.js" />
+    <link rel="stylesheet" href="Scripts/bootstrap.min.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+    
+
 <body>
+    <style>
+@media screen and (min-width: 750px) {
+  .manage {
+    padding-right : 25%;
+  }
+}
+    </style>
+<div style="background-color : #192a56;" class="topnav" dir="rtl">
+    <div class="row ">
+         <div class="col-lg-1 col-md-2 col-6 col-sm-6" dir="rtl">
+            <a href="#myManage" id="button" style="color : white;">مدیر دستگاه </a>
+         </div>
+        <div class="col-lg-1 col-md-2 col-6  col-sm-6" dir="rtl">
+            <a href="#myRequest" id="button1" style="color : white;">درخواست ها  </a>
+         </div>
+     </div>
+ </div>
     <form id="form1" runat="server">
         <asp:HiddenField ID="HiddenField1" runat="server" />
         <% int idHeadname =int.Parse( HiddenField1.Value); %>
         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-        <div>
-            <div class="container-fluid" dir="rtl">
+
+            <div style="width : 100%" class="container-fluid" dir="rtl">
             <% for (int i = 0; i < 3; i++)
             { %>
             <% int IdHeadName = headNameResources[i].id; %>
@@ -40,47 +54,58 @@
       
             <% if (ResourceId == idHeadname)
                      {%>
-                <div class="row" style="padding-bottom : 5%;padding-top : 0%;padding-right : 2%;padding-left : 2%;" dir="rtl">
+                <div id="myManage">
+            <div style="padding-top : 7%; padding-bottom : 7%;" class="manage">
+                 <div class="row" style="padding-bottom : 5%;padding-top : 0%;" dir="rtl">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6" dir="rtl">
-               <table style="width : 80%;">
-                   <tr> 
-                       <td style="color : black;font-weight :bold;font-size:16px; padding-left : 70%;padding-bottom :2%;padding-top : 5%;">
-                           اطلاعات مدیر دستگاه : 
-                       </td>
-                   </tr>
-                  <tr style="background-color : #d2dae2; direction:rtl;">
-                     <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 5%">
-                              نام و نام خانوادگی :
-                    </td>
-                    <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 5%">
-                                  <%  = Fullname %>
-                     </td>
-                     </tr>
-                     <tr style=" direction:rtl;">
-                        <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 9%;">
-                                    شماره تلفن : 
-                       </td>
-                       <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 4%">
-                                <% = TellPhone %>
-                       </td>
-                    </tr>
-                    <tr style="background-color : #d2dae2; direction:rtl;">
-                       <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;direction : rtl;padding-left : 13%">
-                                 ایمیل : 
-                       </td>
-                       <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;direction : rtl;">
-                               <% = Email %>
-                        </td>
-                    </tr>
-            </table>
+                        <p style="float : right;padding-right : 40%;font-weight:bold;color : #485460">مدیریت دستگاه </p>
+                                        <table style="width : 100%;border  :solid; border-color :  #808e9b">
+                                            <tr>
+
+                                                <td >
+                                                   <img style="padding : 1% ; border : solid;border-color : #bdc3c7;width:35%;height : 50%;" class="mySlides " src="Images\2019917-105721-scan0010.jpg" /> 
+                                                </td>
+
+                                            </tr>
+                                            <tr style="background-color : #d2dae2;">
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1% ;">
+                                                    نام و نام خانوادگی :
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <%  = Fullname %>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                    شماره تلفن : 
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <% = TellPhone %>
+                                                </td>
+                                            </tr>
+                                            <tr style="background-color : #d2dae2;">
+                                                <td style="width : 40%;float :right;color : black;font-weight :bold; padding-bottom : 1%;padding-top : 1%;">
+                                                    ایمیل : 
+                                                </td>
+                                                <td style="width : 20%;float :right;color : #4b4b4b;font-weight :bold;padding-bottom : 1%;padding-top : 1%;">
+                                                    <% = Email %>
+                                                </td>
+                                            </tr>
+                                        </table>
                         </div>
+                  </div>
+            </div>
+                    <hr />
                     </div>
+                <div style="width : 100%" id="myRequest">
+                <div style="padding-top : 10%; padding-bottom : 12%;padding-right : 12%;">
+                    <p style="float : right;padding-right : 40%;font-weight:bold;color : #485460">مدیریت دستگاه </p>
             <table style="width : 80%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
                     <tr style="direction :rtl ">
-                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">کد درخواست  </td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">کد رزرو  </td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">نام دستگاه </td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">زمان دستگاه</td>
-                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 3%;border-color : #130f40;">نام درخواست دهنده</td>
+                        <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 3%;border-color : #130f40;">نام کاربر</td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">روز درخواست دستگاه</td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">زمان درخواست</td>
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">پزیرفتن</td>
@@ -100,7 +125,7 @@
                 { %>
                 
             <% int IdRequest = requests[a].id; %>
-               <% int  idrequest = IdRequest ; %>
+               <% string  idrequest = IdRequest.ToString() ; %>
             <% int resourceId = requests[a].ResourceId; %>
             <% int UserId = requests[a].UserId; %>
             <% string DayReception = requests[a].DayReception; %>
@@ -111,7 +136,9 @@
                 <% if ( IdResource == resourceId ) {%>
            <tr style="direction :rtl ">
             
-                        <asp:label runat="server" ID="idrequest" Text="<% = IdRequest;%> "></asp:label>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl">
+                           <% = IdRequest %>
+                            </td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = NameDivice %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = PresentHour %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% =UserId %></td>
@@ -138,10 +165,32 @@
             <% } %>
             <%} %>
             </table>
+                    </div>
             <%} %>
             <% } %>
             </div>
         </div>
+            <div>
+                <img src="Images\500_F_176077267_rJaIz7qH0p2W6h24qOCMRDwXpEQuyTyf (2).jpg" style="width : 100%" />
+            </div>
     </form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#button").click(function (e) {
+            e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+            });
+    });
+    $(document).ready(function () {
+        $("#button1").click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    });
+</script>
 </body>
 </html>

@@ -51,15 +51,6 @@ namespace DigiService.UIL
         protected global::System.Web.UI.WebControls.HiddenField UserID_Request;
 
         /// <summary>
-        /// idrequest control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idrequest;
-
-        /// <summary>
         /// Button_receptionUpdat control.
         /// </summary>
         /// <remarks>

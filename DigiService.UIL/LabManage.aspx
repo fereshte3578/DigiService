@@ -4,30 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <meta charset="UTF-8">
-         <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-    </script>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="style3.css">
-    <script src="jQuery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styles/bootstrap.css" />
+    <link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="stylesheet" href="Scripts/jquery-3.4.1.js" />
+    <link rel="stylesheet" href="Scripts/bootstrap.min.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+<div style="background-color : #192a56;" class="topnav" dir="rtl">
+    <div class="row ">
+        <div class="col-lg-1 col-md-2 col-6  col-sm-6" dir="rtl">
+            <a href="#myRequest" id="button1" style="color : white;">درخواست ها  </a>
+         </div>
+     </div>
+</div>
     <form id="form1" runat="server">
         <asp:HiddenField ID="HiddenField1" runat="server" />
         <% int IdArea = int.Parse( HiddenField1.Value) ; %>
         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-        <div style="padding : 2%;" dir="rtl">
+        <div id="myRequest">
+        <div style="padding-right: 2%;padding-left : 2%;padding-top : 10%;padding-bottom : 25%;" dir="rtl">
             <% for (int a = 0; a <= 2; a++)
                 { %>
             <% int idArea = areas[a].id; %>
@@ -39,7 +41,7 @@
             <% if (idArea == IdArea)
             {%>
 
-            <table style="width : 80%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);" dir="rtl">
+            <table style="width : 100%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);" dir="rtl">
                 <tr style="direction :rtl " >
                     <td style="font-weight : bold;color : #3867d6;border :solid;width : 20%; padding-bottom : 1%;padding-top : 1%;padding-left : 10%;;border-color : #130f40;" dir="rtl"> آزمایشگاه </td>
                     <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">مدیرآزمایشگاه</td>
@@ -119,6 +121,20 @@
             <%} %>
             <% } %>  
         </div>
+        </div>
     </form>
+                <div>
+                <img src="Images\500_F_176077267_rJaIz7qH0p2W6h24qOCMRDwXpEQuyTyf (2).jpg" style="width : 100%" />
+            </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#button1").click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    });
+</script>
 </body>
 </html>

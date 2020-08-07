@@ -103,6 +103,8 @@
     <Content Include="Styles\Style.css" />
     <Content Include="UserControls\BodySlider.ascx" />
     <Content Include="UserControls\CenteralLabWebForm2.ascx" />
+    <Content Include="UserControls\UserContorolNanbar.ascx" />
+    <Content Include="UserControls\UserContorolNav.ascx" />
     <Content Include="UserControls\linknavbar.ascx" />
     <Content Include="UserControls\UserControlsignup_header.ascx" />
     <Content Include="UserControls\UserControl_Footer.ascx" />
@@ -202,6 +204,20 @@
     </Compile>
     <Compile Include="UserControls\CenteralLabWebForm2.ascx.designer.cs">
       <DependentUpon>CenteralLabWebForm2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserContorolNanbar.ascx.cs">
+      <DependentUpon>UserContorolNanbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserContorolNanbar.ascx.designer.cs">
+      <DependentUpon>UserContorolNanbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserContorolNav.ascx.cs">
+      <DependentUpon>UserContorolNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserContorolNav.ascx.designer.cs">
+      <DependentUpon>UserContorolNav.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\linknavbar.ascx.cs">
       <DependentUpon>linknavbar.ascx</DependentUpon>
