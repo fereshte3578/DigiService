@@ -1,5 +1,7 @@
 ﻿using DigiService.BLL;
+using DigiService.BLL.usermanager;
 using DigiService.Entities;
+using DigiService.Entities.users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,7 @@ namespace DigiService.UIL
 {
     public partial class AccessPart : System.Web.UI.Page
     {
+        public List<Users> users = new List<Users>();
         public List<Requests> requests = new List<Requests>();
         public List<ReSource> reSources = new List<ReSource>();
         public List<HeadNameResource> headNameResources = new List<HeadNameResource>();
@@ -24,6 +27,9 @@ namespace DigiService.UIL
 
             RequestManager requestManager = new RequestManager();
             requests = requestManager.SelectRequests();
+
+            UserManagers userManagers = new UserManagers();
+            users = userManagers.selectUser();
 
             if (Request.Cookies["DCookies"] != null)
             {

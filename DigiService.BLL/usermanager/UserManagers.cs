@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using DigiService.Entities.users;
 
 namespace DigiService.BLL.usermanager
 {
@@ -17,6 +18,14 @@ namespace DigiService.BLL.usermanager
             UserDao ob = new UserDao();
             string Q = "INSERT INTO UserRegistration VALUES (N'" + Name + "',N'" + Family + "',N'" + Phone + "',N'" + Email + "',N'" + Address + "',N'" + Gender + "',N'" + Username + "',N'" + Password + "') ";
             ob.saveData(Q);
+        }
+
+        public List<Users> selectUser()
+        {
+            UserDao userDao = new UserDao();
+            return userDao.selectUser();
+
+
         }
     }
 

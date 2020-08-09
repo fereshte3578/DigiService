@@ -134,6 +134,14 @@
                 <% int STATUS = requests[a].Status; %>
                 
                 <% if ( IdResource == resourceId ) {%>
+                <% for (int u = 0; u < 2; u++)
+                          { %>
+               <% int IdUser = users[u].id; %>
+                <% if (UserId == IdUser)
+                         { %>
+                <% string nameU = users[u].Name; %>
+                <% string FamilyU = users[u].Family; %>
+
            <tr style="direction :rtl ">
             
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl">
@@ -141,12 +149,12 @@
                             </td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = NameDivice %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% = PresentHour %></td>
-                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% =UserId %></td>
+                        <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"><% =UserId %> : <% =nameU %><% = FamilyU %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = DayReception %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = StartHour %> _ <% = FinishHour %> </td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> 
                             <% if (STATUS == 0)
-                               {%>
+                         {%>
                            
                             <a href="AccessPart.aspx?idreq=<% = IdRequest %>" style="color : #33d9b2; border : none ;" > oh</a>
                           
@@ -155,11 +163,13 @@
                             </asp:Button>
                             <%} %>
                             <% if (STATUS == 1)
-                                { %>
+                         { %>
                             <asp:Button ID="Button1" runat="server" Text="X" BackColor="#ff5252" BorderStyle="None" ForeColor="White"></asp:Button>
                             <% } %>
                         </td>
                </tr>
+                <%} %>
+                <% } %>
             <% } %>
             <%} %>
             <% } %>
