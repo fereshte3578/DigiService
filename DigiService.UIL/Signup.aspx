@@ -126,11 +126,15 @@
             }
         }
         function usernameprof(inputnumberdoctor) {
-
-            if (iputlastname.value.trim().match(/^[\u0600-\u06FF\s]+$/)) {
+          
+            if (inputnumberdoctor.value.match(/^[\u0600-\u06FF\s]+$/)) {
+                
                 document.getElementById("profuser").innerHTML = "نام کاربری معتبر نیست.";
                 document.getElementById("profuser").style.color = "red";
+               
+                
             } else {
+               
                 document.getElementById("profuser").innerHTML = " ";
             }
         }
