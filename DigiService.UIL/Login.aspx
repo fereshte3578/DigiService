@@ -52,11 +52,15 @@
 
                         <div class="container">
                             <img src="Images/Icons-24px-Black-Single.svg" class="imag_signup" width="45px" height="45px" />
-                            <asp:TextBox ID="txtuname" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" CssClass="textbox_signup" placeholder="نام کاربری" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtuname" onkeyup="usernameprof(this);" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" CssClass="textbox_signup" placeholder="نام کاربری" runat="server"></asp:TextBox>
                             <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
+                            <br />
+                            <div id="profuser"></div>
                             <img src="Images/Icons-24px-Black-Unlocked.svg" class="imag_signup" width="45px" height="45px" />
-                            <asp:TextBox ID="txtpassword" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد" CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="txtpassword" onkeyup="passwordprof(this);" Style="width: 90%; border-radius: 50px; height: 48px; border: solid 3px; border-color: #172b4d" placeholder="پسورد" CssClass="textbox_signup" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:Label runat="server" Text="*" ForeColor="red"></asp:Label>
+                            <br />
+                            <div id="profpassword"></div>
 
                             <asp:Button ID="btnlogin" Style="width: 90%;" OnClick="btn1_click" class="btn_signup" runat="server" Text="ورود" />
 
@@ -75,5 +79,28 @@
             <br />
         </div>
     </form>
+    <script type="text/javascript">
+        function usernameprof(inputnumberdoctor) {
+
+            if (inputnumberdoctor.value.match(/^[\u0600-\u06FF\s]+$/)) {
+
+                document.getElementById("profuser").innerHTML = "نام کاربری معتبر نیست.";
+                document.getElementById("profuser").style.color = "red";
+
+
+            } else {
+
+                document.getElementById("profuser").innerHTML = " ";
+            }
+        }
+        function passwordprof(inputnumberdoctor) {
+            if (inputnumberdoctor.value.match(/^s.{4}$/)) {
+                document.getElementById("profpassword").innerHTML = " ";
+            } else {
+                document.getElementById("profpassword").innerHTML = "پسورد با sشروع شود و 4کاراکتر باشد .";
+                document.getElementById("profpassword").style.color = "red";
+            }
+        }
+    </script>
 </body>
 </html>

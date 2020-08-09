@@ -59,7 +59,7 @@ namespace DigiService.DAL.userprofiledao
 
         public UserProfileEntities selectuser(int id)
         {
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835; ");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DigiService;Integrated Security = False ;User ID = Digiservice ; Password = fereshte7835;");
 
             SqlCommand com = new SqlCommand("select * from UserRegistration where id='" + id + "'", con);
             SqlParameter lanquageParameter = com.Parameters.Add("@id", System.Data.SqlDbType.Int);
