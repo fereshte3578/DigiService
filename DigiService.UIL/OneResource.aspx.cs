@@ -11,6 +11,7 @@ namespace DigiService.UIL
 {
     public partial class OneResource : System.Web.UI.Page
     {
+        public List<Requests> Requests = new List<Requests>();
         public List<TimeReSource> timeReSources = new List<TimeReSource>();
         public List<HeadNameResource> headNameResources = new List<HeadNameResource>();
         public List<ReSource> MultyResoure = new List<ReSource>();
@@ -28,6 +29,9 @@ namespace DigiService.UIL
 
             TimeReSourceManager timeReSourceManager = new TimeReSourceManager();
             timeReSources = timeReSourceManager.SelectTimeReSource();
+
+            RequestManager requestManager = new RequestManager();
+            Requests = requestManager.SelectRequests();
 
             string IdRes = Request.QueryString[0].ToString();
             HiddenFieldIdResource.Value = IdRes;

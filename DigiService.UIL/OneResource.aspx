@@ -188,40 +188,70 @@
 
                                         <% int IdTime = timeReSources[t].id; %>
                                         <% int TimeIdRESOURCE = timeReSources[t].ReSourceId; %>
+                                           
                                         <% if (TimeIdRESOURCE == IdR)
                                         { %>
                                         <% string TimeWichday = timeReSources[t].wichday; %>
                                         <% int TimeStartHour = int.Parse(timeReSources[t].StartHour);%>
                                         <% int TimeFinishHour =int.Parse( timeReSources[t].FinishHour); %>
+
                                             <tr style="border : 1px solid;border-color : #ecf0f1;">
                                                 
                                                 <td style="width:9%;font-size:15px;font-weight : bold;float :right;color : black ;padding-left :3%;margin-left : 1% ">
                                                     <% = TimeWichday %>
                                                 </td>
+                                                               
+                                                <% for (int h = 7; h <= 16; h++)
+                                                   { %>
 
-                                                <% for(int h = 7; h <=16; h++){ %>
                                                     <% if (TimeStartHour <= h && TimeFinishHour >= h)
-                                                             {  %>
-                                               
-                                                    <% string hour = h.ToString() ; %>
-                                                    <% string idbtnadd = TimeWichday+ ' '+hour+' '+ IdR; %>
-                                                
-                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                          <a href="request.aspx?idr = <% =idbtnadd  %>">مجاز</a>
+                                                        {  %>
+                                                <% for (int q = 0; q <= 2; q++)
+    { %>
+                                                <% int iDreSOURCEreQUEST = Requests[q].ResourceId; %>
+                                                <% int ststusRequest = Requests[q].Status; %>
+                                                <% int startReq = int.Parse(Requests[q].StartHour); %>
+                                                <% string day = Requests[q].DayReception; %>
+                                                <% if (iDreSOURCEreQUEST == IdR)
+    { %>
+                                                <% if (ststusRequest == 0 && startReq == h && day == TimeWichday)
+    { %>
+                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #fff200">
+                                                          <a href="request.aspx"></a>
                                                             
                                                         </td>
-                                                <
-                                                        <%} %>
+                                                <%} %>
+                                                <% else if (ststusRequest == 1 && startReq == h && day == TimeWichday)
+    { %>
+                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #ff7979">
+                                                          <a href="request.aspx"></a>
+                                                            
+                                                        </td>
+                                                <%} %>
+                                                <% else
+                                                    { %>
+                                                   <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
+                                                          <a href="request.aspx"></a>
+                                                            
+                                                        </td>
+                                                <% } %>
 
+                                                <% } %>
+                                                   <%} %>
+                                               <% } %>
                                                         <% else
-                                                             { %>
+    { %>
                                                             <td style="border : 1px solid;border-color : #ecf0f1;width : 9%;height : 25px;float :right;color : black;font-weight :bold;color:black;background-color : #636e72">
                                                           
                                                             </td>
                                                             <%} %>
                                                 
                                                 <% } %>
+                                                
+                                                
                                             </tr>
+                                            
+                                            <% } %>
 
                                         <%} %>
 
@@ -308,8 +338,6 @@
                <%} %>
                <%} %>
               <%} %>
-           
-               <%} %>
 
 
             </div>
