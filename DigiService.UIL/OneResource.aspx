@@ -32,6 +32,7 @@
 }
 .size{
    width : 100%;
+   background-color : #f1f2f6;
    border-radius : 0px;
    border : none;
 }
@@ -207,23 +208,23 @@
                                                     <% if (TimeStartHour <= h && TimeFinishHour >= h)
                                                         {  %>
                                                 <% for (int q = 0; q <= 2; q++)
-    { %>
+                                                   { %>
                                                 <% int iDreSOURCEreQUEST = Requests[q].ResourceId; %>
                                                 <% int ststusRequest = Requests[q].Status; %>
                                                 <% int startReq = int.Parse(Requests[q].StartHour); %>
                                                 <% string day = Requests[q].DayReception; %>
                                                 <% if (iDreSOURCEreQUEST == IdR)
-    { %>
+                                                   { %>
                                                 <% if (ststusRequest == 0 && startReq == h && day == TimeWichday)
-    { %>
-                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #fff200">
+                                                       { %>
+                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #ff4757">
                                                           <a href="request.aspx"></a>
                                                             
                                                         </td>
                                                 <%} %>
                                                 <% else if (ststusRequest == 1 && startReq == h && day == TimeWichday)
-    { %>
-                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #ff7979">
+                                                    { %>
+                                                        <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;background-color : #ff4757">
                                                           <a href="request.aspx"></a>
                                                             
                                                         </td>
@@ -231,8 +232,7 @@
                                                 <% else
                                                     { %>
                                                    <td style="border : 1px solid;border-color : #ecf0f1;height : 25px;width : 9%;float :right;color : black;font-weight :bold;color:black ;">
-                                                          <a href="request.aspx"></a>
-                                                            
+                                                         <asp:Button runat="server" CssClass="size" />  
                                                         </td>
                                                 <% } %>
 
@@ -240,7 +240,7 @@
                                                    <%} %>
                                                <% } %>
                                                         <% else
-    { %>
+                                                            { %>
                                                             <td style="border : 1px solid;border-color : #ecf0f1;width : 9%;height : 25px;float :right;color : black;font-weight :bold;color:black;background-color : #636e72">
                                                           
                                                             </td>
