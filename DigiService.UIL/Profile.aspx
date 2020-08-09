@@ -24,11 +24,12 @@
         <div class="wrapper">
             <div class="sidebar" align="right">
                 <div class="sidebar-header">
-                    <div class="circle-logo"></div>
-                    
+                    <img class="img-sidbar" src="Images\download.png" />
+                    <br />
+
                     <asp:Label class="text-sidebar-header" ID="Label9" runat="server" Text=" "><p>خوش آمدید</p></asp:Label>
                 </div>
-              
+
 
                 <li>
                     <a href="#">
@@ -37,40 +38,32 @@
 
                 <li>
                     <a href="#">
-                        <img src="Images/Component 17 – 1.svg" class="image-sidebar" />تغییر رمز عبور</a>
+                        <img src="Images/Component 17 – 1.svg" class="image-sidebar" />دستگاه ها</a>
 
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="Images/Group 47.svg" class="image-sidebar" />
-                        اطلاعات شما</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="Images/Group 44.svg" class="image-sidebar" />پیام رسانی</a>
-                </li>
+               
 
-                  
+
             </div>
             <div class="content">
                 <div class="nav-seller" align="left">
                     <p align="right">پروفایل شما</p>
-                    <asp:Button class="btn-exit-profile" onclick="btn_exit_profile" Text="خروج" runat="server"/>
-                   
+                    <asp:Button class="btn-exit-profile" OnClick="btn_exit_profile" Text="خروج" runat="server" />
+
                 </div>
                 <div class="row mt-5 mt-5 text-right text-lg-right">
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12" align="center">
                         <div>
-                            <div class="row"  align="center">
+                            <div class="row" align="center">
                                 <div class="col-1 col-lg-1"></div>
                                 <div class="col-10 col-lg-10">
                                     <asp:HiddenField runat="server" ID="hfUserID_prof" />
-                                   
+
                                     <div class="card">
                                         <table class="tbl_profile">
                                             <tr>
                                                 <td colspan="2" align="center">
-                                                    
+
                                                     <center>
                                 <asp:Label ID="profile_name" runat="server" Text=""></asp:Label>
                                                 <br />
@@ -90,12 +83,15 @@
                                             <tr>
                                                 <td>
                                                     <asp:Label ID="Label1" runat="server" Text="نام:"></asp:Label>
-                                                    <asp:TextBox class="textbox-profile" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
-
+                                                    <asp:TextBox class="textbox-profile" onkeyup="myfirstname(this)" placeholder="نام" ID="txtName" runat="server"></asp:TextBox>
+                                                    <br />
+                                                    <div id="firstname_doctor1"></div>
                                                 </td>
                                                 <td>
                                                     <asp:Label ID="Label2" runat="server" Text="نام خانوادگی:"></asp:Label>
-                                                    <asp:TextBox class="textbox-profile" placeholder="نام خانوادگی" ID="TextBox1" runat="server"></asp:TextBox>
+                                                    <asp:TextBox class="textbox-profile" onkeyup="myfamilyname(this);" placeholder="نام خانوادگی" ID="TextBox1" runat="server"></asp:TextBox>
+
+                                                    <div id="familyname_doctor1"></div>
                                                 </td>
                                             </tr>
 
@@ -120,28 +116,36 @@
                                             <tr>
                                                 <td>
                                                     <asp:Label ID="Label6" runat="server" Text="نام کاربری:"></asp:Label>
-                                                    <asp:TextBox placeholder="نام کاربری" class="textbox-profile" ID="TextBox2" runat="server"></asp:TextBox></td>
+                                                    <asp:TextBox placeholder="نام کاربری" onkeyup="usernameprof(this);" class="textbox-profile" ID="TextBox2" runat="server"></asp:TextBox>
+                                                    <br />
+                                                    <div id="profuser"></div>
+                                                </td>
+
                                                 <td>
                                                     <asp:Label ID="Label7" runat="server" Text="پسورد:"></asp:Label>
-                                                    <asp:TextBox placeholder="پسورد" class="textbox-profile" ID="TextBox3"  runat="server"></asp:TextBox>
-
+                                                    <asp:TextBox placeholder="پسورد" onkeyup="passwordprof(this);" class="textbox-profile" ID="TextBox3" runat="server"></asp:TextBox>
+                                                    <br />
+                                                    <div id="profpassword"></div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <asp:Label ID="Label8" runat="server" Text="تلفن:"></asp:Label>
-                                                    <asp:TextBox placeholder="تلفن" class="textbox-profile" ID="TextBox4" runat="server"></asp:TextBox>
+                                                    <asp:TextBox placeholder="تلفن" onkeyup="mynumberdocter(this);" class="textbox-profile" ID="TextBox4" runat="server"></asp:TextBox>
+                                                    <br />
+                                                    <div id="number_doctor1"></div>
                                                 </td>
+
                                             </tr>
                                             <tr>
                                                 <td colspan="2">
                                                     <asp:Button ID="Button1" class="btn-profile" OnClick="btn_update_profile" runat="server" Text="بروز رسانی اطلاعات شما" /></td>
-                                                <asp:Label ID="Label10" Style="color:red;" runat="server" Text=""></asp:Label>
+                                                <asp:Label ID="Label10" Style="color: red;" runat="server" Text=""></asp:Label>
                                             </tr>
 
                                         </table>
                                     </div>
-                                          
+
                                     <br />
                                     <br />
                                     <br />
@@ -194,5 +198,49 @@
 
         </div>
     </form>
+     <script type="text/javascript">
+        function myfirstname(inputfirstname) {
+            if (inputfirstname.value.trim().match(/^[\u0600-\u06FF\s]+$/)) {
+                document.getElementById("firstname_doctor1").innerHTML = " ";
+            } else {
+                document.getElementById("firstname_doctor1").innerHTML = "نام معتبر نیست.";
+                document.getElementById("firstname_doctor1").style.color = " red ";
+            }
+        }
+        function myfamilyname(iputlastname) {
+            if (iputlastname.value.trim().match(/^[\u0600-\u06FF\s]+$/)) {
+                document.getElementById("familyname_doctor1").innerHTML = " ";
+            } else {
+                document.getElementById("familyname_doctor1").innerHTML = "نام خانوادگی معتبر نیست";
+                document.getElementById("familyname_doctor1").style.color = "red";
+            }
+        }
+        function mynumberdocter(inputnumberdoctor) {
+            if (inputnumberdoctor.value.match(/^(\+989|9|09)\d{9}$/)) {
+                document.getElementById("number_doctor1").innerHTML = " ";
+            } else {
+                document.getElementById("number_doctor1").innerHTML = "شماره تلفن نیست.";
+                document.getElementById("number_doctor1").style.color = "red";
+            }
+        }
+        function usernameprof(inputnumberdoctor) {
+
+            if (iputlastname.value.trim().match(/^[\u0600-\u06FF\s]+$/)) {
+                document.getElementById("profuser").innerHTML = "نام کاربری معتبر نیست.";
+                document.getElementById("profuser").style.color = "red";
+            } else {
+                document.getElementById("profuser").innerHTML = " ";
+            }
+        }
+        function passwordprof(inputnumberdoctor) {
+            if (inputnumberdoctor.value.match(/^s.{4}$/)) {
+                document.getElementById("profpassword").innerHTML = " ";
+            } else {
+                document.getElementById("profpassword").innerHTML = "پسورد با sشروع شود و 4کاراکتر باشد .";
+                document.getElementById("profpassword").style.color = "red";
+            }
+        }
+
+    </script>
 </body>
 </html>

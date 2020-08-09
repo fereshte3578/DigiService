@@ -198,6 +198,11 @@ footer p {
     padding: 0px;
     transition: width 2s;
 }
+.img-sidbar{
+    border-radius:50%;
+    width:100px;
+    height:100px;
+}
 
     .sidebar:hover {
         width: 150px;
