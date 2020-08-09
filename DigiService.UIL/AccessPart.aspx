@@ -55,7 +55,7 @@
             <% if (ResourceId == idHeadname)
                      {%>
                 <div id="myManage">
-            <div style="padding-top : 7%; padding-bottom : 7%;" class="manage">
+            <div style="padding-top : 7%; padding-bottom : 3%;" class="manage">
                  <div class="row" style="padding-bottom : 5%;padding-top : 0%;" dir="rtl">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6" dir="rtl">
                         <p style="float : right;padding-right : 40%;font-weight:bold;color : #485460">مدیریت دستگاه </p>
@@ -95,11 +95,11 @@
                         </div>
                   </div>
             </div>
-                    <hr />
+                    <hr style="font-size : 10px;" />
                     </div>
                 <div style="width : 100%" id="myRequest">
-                <div style="padding-top : 10%; padding-bottom : 12%;padding-right : 12%;">
-                    <p style="float : right;padding-right : 40%;font-weight:bold;color : #485460">مدیریت دستگاه </p>
+                <div style="padding-top : 5%; padding-bottom : 12%;padding-right : 12%;">
+                    <p style="float : right;padding-right : 40%;font-weight:bold;color : #485460;font-size : 20px;padding-bottom : 5%;">درخواست ها </p>
             <table style="width : 80%;border :solid;border-color : #130f40;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
                     <tr style="direction :rtl ">
                         <td style ="font-weight : bold;color : #3867d6;border :solid;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border-color : #130f40;">کد رزرو  </td>
@@ -153,19 +153,17 @@
                         <td style ="font-weight : bold;color : #40407a;width : 10%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = DayReception %></td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> <% = StartHour %> _ <% = FinishHour %> </td>
                         <td style ="font-weight : bold;color : #40407a;width : 15%; padding-bottom : 1%;padding-top : 1%;padding-left : 5%;border :solid;border-color : #130f40;" dir="rtl"> 
-                            <% if (STATUS == 0)
-                         {%>
-                           
-                            <a href="AccessPart.aspx?idreq=<% = IdRequest %>" style="color : #33d9b2; border : none ;" > oh</a>
-                          
-                            <asp:Button runat="server" ID="Button_receptionUpdat"   Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White">
-                                
-                            </asp:Button>
-                            <%} %>
-                            <% if (STATUS == 1)
-                         { %>
-                            <asp:Button ID="Button1" runat="server" Text="X" BackColor="#ff5252" BorderStyle="None" ForeColor="White"></asp:Button>
-                            <% } %>
+                          <button id="btn_ubdate" onclick="myUpdate()" style="background-color : #3ae374;color : #7bed9f;border : none;">ok</button>
+                            <button id="btn_n" onclick="myn()" style="background-color : #ff4757;color : #ff6b81;border : none;">X</button>
+
+                            <script type="text/javascript">
+                                function myUpdate() {
+                                    document.getElementById("btn_n").style.display = "none"; 
+                                }
+                                function myn() {
+                                    document.getElementById("btn_ubdate").style.display = "none";
+                                }
+                             </script>
                         </td>
                </tr>
                 <%} %>
