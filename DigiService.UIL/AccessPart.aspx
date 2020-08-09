@@ -150,7 +150,7 @@
                            
                             <a href="AccessPart.aspx?idreq=<% = IdRequest %>" style="color : #33d9b2; border : none ;" > oh</a>
                           
-                            <asp:Button runat="server" ID="Button_receptionUpdat"  OnClick="Update0"  Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White">
+                            <asp:Button runat="server" ID="Button_receptionUpdat"   Text="OK" BackColor="#33d9b2" BorderStyle="None" ForeColor="White">
                                 
                             </asp:Button>
                             <%} %>
@@ -178,10 +178,10 @@
     $(document).ready(function () {
         $("#button").click(function (e) {
             e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 500);
-            });
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
     });
     $(document).ready(function () {
         $("#button1").click(function (e) {

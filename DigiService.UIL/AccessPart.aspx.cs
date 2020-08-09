@@ -39,14 +39,5 @@ namespace DigiService.UIL
 
 
 
-        protected void Update0(object sender, EventArgs e)
-        {
-            Requests requests = new Requests();
-            requests.id =int.Parse(idrequest.Text);
-            RequestManager requestManager = new RequestManager();
-            requestManager.Update0(requests);
-        }
-
-
     }
 }

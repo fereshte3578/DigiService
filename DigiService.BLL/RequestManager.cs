@@ -29,5 +29,11 @@ namespace DigiService.BLL
             string Q = "INSERT INTO UserRegistration VALUES ('" + idResorce + "','" + 1 + "',N'" + day + "',N'" + starthour + "',N'" + finalfinish + "','" + 0 + " ') ";
             ob.saveData(Q);
         }
+
+        public List<Requests> SelectAllWithPaging(int pageIndex, int pageSize, out int total)
+        {
+            RequestDao requestDao = new RequestDao();
+            return requestDao.SelectAllWithPaging(pageIndex, pageSize, out total);
+        }
     }
 }
