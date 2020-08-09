@@ -38,6 +38,5 @@ namespace DigiService.UIL
 
         }
     }
-    
 
     }
