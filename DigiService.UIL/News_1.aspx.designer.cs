@@ -11,7 +11,7 @@ namespace DigiService.UIL
 {
 
 
-    public partial class index
+    public partial class News_1
     {
 
         /// <summary>
@@ -33,58 +33,49 @@ namespace DigiService.UIL
         protected global::DigiService.UIL.UserControls.UserControl_Header header;
 
         /// <summary>
-        /// BodySlider control.
+        /// lbid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DigiService.UIL.UserControls.BodySlider BodySlider;
+        protected global::System.Web.UI.WebControls.Label lbid;
 
         /// <summary>
-        /// HiddenField1_news control.
+        /// lbtitr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenField1_news;
+        protected global::System.Web.UI.WebControls.Label lbtitr;
 
         /// <summary>
-        /// titrnews control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label titrnews;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// HyperLink1 control.
+        /// lbkhabar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Label lbkhabar;
 
         /// <summary>
-        /// news_selected control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label news_selected;
-
-        /// <summary>
-        /// Central control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DigiService.UIL.UserControls.CenteralLabWebForm2 Central;
+        protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
         /// UserControl_Footer control.

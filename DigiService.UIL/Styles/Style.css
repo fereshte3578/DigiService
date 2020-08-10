@@ -434,8 +434,39 @@ footer p {
     }
 }
 
+/*----------------------news-----------------*/
+.card_news{
+    width:400px;
+    height:auto;
+    border:solid #000000 1px;
+    margin:40px;
+    text-align:right;
+    color:#000000;
+    font-size:15px;
+    padding:10px;
+}
+.img_news{
+    width:380px;
+    height:auto;
+   
+}
+.tbl_news td{
+    padding:30px;
+    background-color:#f4b3b3;
+    font-size:20px;
+    
+   
 
-
+}
+.tbl_news {
+    height: auto;
+    width: 100%;
+    text-align:right;
+}
+.news-1{
+    padding:30px;
+    font-size:20px;
+}
 
 
 

@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <form class="example" action="/action_page.php" >
-                     <button type="submit" class="btn_search_header" ><span class="material-icons">search</span></button>
+                     <button type="submit" class="btn_search_header" ><img src="\Images\magnifiying-glass.svg"/></button>
                     <input type="text" placeholder="جست و جو کنید" class="input_search_header" name="search2" >
                     <asp:LinkButton ID="LinkButton1" runat="server"></asp:LinkButton>
                    

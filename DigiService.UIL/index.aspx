@@ -27,7 +27,22 @@
         <Header:UserControl_Header runat="server" id="header"/>
         <fereshte:linknavbar runat="server" />
         <bodys:BodySlider runat="server" ID="BodySlider" />
-       
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="card_news">
+                <asp:HiddenField ID="HiddenField1_news" runat="server" />
+                
+                <img class="img_news" src="Images\News_R30rrrrr79957.jpg"/>
+                <br />
+                <br />
+                <asp:Label runat="server" ID="titrnews"></asp:Label><br /><br />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl = "News_1.aspx"><asp:Label runat="server" ID="news_selected"></asp:Label></asp:HyperLink>
+                
+
+            </div>
+        </div>
               <fereshte:CenteralLabWebForm2 runat="server" ID="Central" />
         
         <footer:UserControl_Footer runat="server" id="UserControl_Footer"/>

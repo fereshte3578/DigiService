@@ -95,6 +95,7 @@
     <Content Include="index.aspx" />
     <Content Include="LabManage.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="News_1.aspx" />
     <Content Include="OneResource.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="request.aspx" />
@@ -107,6 +108,7 @@
     <Content Include="UserControls\UserContorolNav.ascx" />
     <Content Include="UserControls\linknavbar.ascx" />
     <Content Include="UserControls\UserControlsignup_header.ascx" />
+    <Content Include="UserControls\UserControls_News.ascx" />
     <Content Include="UserControls\UserControl_Footer.ascx" />
     <Content Include="UserControls\UserControl_Header.ascx" />
     <Content Include="UserControls\WelfareWebform.ascx" />
@@ -154,6 +156,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News_1.aspx.cs">
+      <DependentUpon>News_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News_1.aspx.designer.cs">
+      <DependentUpon>News_1.aspx</DependentUpon>
     </Compile>
     <Compile Include="OneResource.aspx.cs">
       <DependentUpon>OneResource.aspx</DependentUpon>
@@ -232,6 +241,13 @@
     </Compile>
     <Compile Include="UserControls\UserControlsignup_header.ascx.designer.cs">
       <DependentUpon>UserControlsignup_header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControls_News.ascx.cs">
+      <DependentUpon>UserControls_News.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControls_News.ascx.designer.cs">
+      <DependentUpon>UserControls_News.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserControl_Footer.ascx.cs">
       <DependentUpon>UserControl_Footer.ascx</DependentUpon>

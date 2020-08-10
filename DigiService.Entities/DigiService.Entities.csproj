@@ -45,6 +45,7 @@
     <Compile Include="Department.cs" />
     <Compile Include="HeadNameResource.cs" />
     <Compile Include="LabManage.cs" />
+    <Compile Include="Newsentities\NewsEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests.cs" />
     <Compile Include="ReSource.cs" />
